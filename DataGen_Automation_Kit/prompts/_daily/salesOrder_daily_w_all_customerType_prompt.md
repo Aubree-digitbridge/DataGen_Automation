@@ -204,16 +204,13 @@ Ensure no single day exceeds 20 orders.
 ================================================
 PRODUCT SOURCES
 
-Combine all product files into a single SKU pool:
+Use one single source file for SKU pool:
 
-Shoe-Products.csv
-Product_Vibes_PJ.csv
-Product_Vibes_SP.csv
-Product_Vibes_SP2.csv
+SKU_Only.csv
 
 Rules:
 
-SKU must come from the combined pool.
+SKU must come from SKU_Only.csv.
 
 Do NOT repeat the same SKU within the same order.
 
