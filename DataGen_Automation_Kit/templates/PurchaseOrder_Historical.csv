@@ -1,0 +1,755 @@
+PoNum,PoType,PoStatus,PoDate,EtaShipDate,EtaArrivalDate,CancelDate,VendorCode,VendorName,Currency,SubTotalAmount,TotalAmount,TaxRate,TaxAmount,TaxableAmount,NonTaxableAmount,ShippingCarrier,ShippingClass,ChannelNum,ChannelAccountNum,ChannelOrderID,SecondaryChannelOrderID,ShippingAccount,RefNum,CustomerPoNum,CustomerCode,CustomerName,OrderNumber,InvoiceNumber,ShipToName,ShipToCompany,ShipToAddressLine1,ShipToAddressLine2,ShipToCity,ShipToState,ShipToPostalCode,ShipToCounty,ShipToCountry,ShipToEmail,ShipToDaytimePhone,BillToName,BillToCompany,BillToAttention,BillToAddressLine1,BillToAddressLine2,BillToCity,BillToState,BillToStateFullName,BillToPostalCode,BillToPostalCodeExt,BillToCounty,BillToCountry,BillToEmail,BillToDaytimePhone,BillToNightPhone,Notes,Container,Seq,WarehouseCode,SKU,Description,ItemTotalAmount,PoQty,Price,ItemNotes,UPC,EAN,MPN,ExternalBarcode,VendorSku
+500214,0,1,9/30/2024 19:03,11/20/2024 20:05,11/30/2024 4:03,11/15/2024 20:06,VEND1000,"
+Sanchez-Taylor",,4087.2,4087.2,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,01,FB3601726P-2319IMPERIAL-14-STD,CANDICE KNIT SKINNY PULL ON PANTS,340.6,20,17.03,,8.09666E+11,,,,
+500214,0,1,9/30/2024 19:03,11/20/2024 20:05,11/30/2024 4:03,11/15/2024 20:06,VEND1000,"
+Sanchez-Taylor",,4087.2,4087.2,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,01,FB3601726P-2319IMPERIAL-16-STD,CANDICE KNIT SKINNY PULL ON PANTS,681.2,40,17.03,,8.09666E+11,,,,
+500214,0,1,9/30/2024 19:03,11/20/2024 20:05,11/30/2024 4:03,11/15/2024 20:06,VEND1000,"
+Sanchez-Taylor",,4087.2,4087.2,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,01,FB3601726P-2319IMPERIAL-18-STD,CANDICE KNIT SKINNY PULL ON PANTS,1192.1,70,17.03,,8.09666E+11,,,,
+500214,0,1,9/30/2024 19:03,11/20/2024 20:05,11/30/2024 4:03,11/15/2024 20:06,VEND1000,"
+Sanchez-Taylor",,4087.2,4087.2,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,01,FB3601726P-2319IMPERIAL-20-STD,CANDICE KNIT SKINNY PULL ON PANTS,1021.8,60,17.03,,8.09666E+11,,,,
+500214,0,1,9/30/2024 19:03,11/20/2024 20:05,11/30/2024 4:03,11/15/2024 20:06,VEND1000,"
+Sanchez-Taylor",,4087.2,4087.2,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,01,FB3601726P-2319IMPERIAL-22-STD,CANDICE KNIT SKINNY PULL ON PANTS,851.5,50,17.03,,8.09666E+11,,,,
+500215,0,1,9/30/2024 19:30,11/20/2024 20:30,11/30/2024 4:30,11/15/2024 20:30,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,,1,01,20015705P-1824WASH-14-STD,ROLL-UP HEM BOYFRIEND JEANS,128,10,12.8,,8.09666E+11,,,,
+500215,0,1,9/30/2024 19:30,11/20/2024 20:30,11/30/2024 4:30,11/15/2024 20:30,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,,2,01,20015705P-1824WASH-16-STD,ROLL-UP HEM BOYFRIEND JEANS,256,20,12.8,,8.09666E+11,,,,
+500215,0,1,9/30/2024 19:30,11/20/2024 20:30,11/30/2024 4:30,11/15/2024 20:30,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,,3,01,20015705P-1824WASH-18-STD,ROLL-UP HEM BOYFRIEND JEANS,320,25,12.8,,8.09666E+11,,,,
+500215,0,1,9/30/2024 19:30,11/20/2024 20:30,11/30/2024 4:30,11/15/2024 20:30,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,,4,01,20015705P-1824WASH-20-STD,ROLL-UP HEM BOYFRIEND JEANS,512,40,12.8,,8.09666E+11,,,,
+500215,0,1,9/30/2024 19:30,11/20/2024 20:30,11/30/2024 4:30,11/15/2024 20:30,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,,5,01,20015705P-1824WASH-22-STD,ROLL-UP HEM BOYFRIEND JEANS,320,25,12.8,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,1,01,LV241938-913RAINMAN-30-30,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,2,01,LV241938-913RAINMAN-32-30,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,3,01,LV241938-913RAINMAN-34-30,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,4,01,LV241938-913RAINMAN-36-30,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,5,01,LV241938-913RAINMAN-38-30,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,6,01,LV241938-913RAINMAN-30-32,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,7,01,LV241938-913RAINMAN-32-32,Patch Pocket Jeans,501,30,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,8,01,LV241938-913RAINMAN-34-32,Patch Pocket Jeans,751.5,45,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,9,01,LV241938-913RAINMAN-36-32,Patch Pocket Jeans,751.5,45,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,10,01,LV241938-913RAINMAN-38-32,Patch Pocket Jeans,501,30,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,11,01,LV241938-913RAINMAN-40-32,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,12,01,LV241938-913RAINMAN-42-32,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,13,01,LV241938-913RAINMAN-32-34,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,14,01,LV241938-913RAINMAN-34-34,Patch Pocket Jeans,501,30,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,15,01,LV241938-913RAINMAN-36-34,Patch Pocket Jeans,501,30,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,16,01,LV241938-913RAINMAN-38-34,Patch Pocket Jeans,250.5,15,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,17,01,LV241938-913RAINMAN-40-30,Patch Pocket Jeans,167,10,16.7,,8.09666E+11,,,,
+500219,0,2,9/30/2024 19:36,12/5/2024 0:48,11/30/2024 4:36,12/1/2024 0:47,VEND1000,"
+Sanchez-Taylor",,6262.5,6262.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,18,01,LV241938-913RAINMAN-42-30,Patch Pocket Jeans,83.5,5,16.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,1,01,LV115178-913RAINMAN-30-30,Villager Jean,708,40,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,2,01,LV115178-913RAINMAN-32-30,Villager Jean,708,40,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,3,01,LV115178-913RAINMAN-34-30,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,4,01,LV115178-913RAINMAN-36-30,Villager Jean,442.5,25,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,5,01,LV115178-913RAINMAN-38-30,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,6,01,LV115178-913RAINMAN-40-30,Villager Jean,177,10,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,7,01,LV115178-913RAINMAN-30-32,Villager Jean,619.5,35,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,8,01,LV115178-913RAINMAN-32-32,Villager Jean,1239,70,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,9,01,LV115178-913RAINMAN-34-32,Villager Jean,1239,70,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,10,01,LV115178-913RAINMAN-36-32,Villager Jean,708,40,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,11,01,LV115178-913RAINMAN-38-32,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,12,01,LV115178-913RAINMAN-40-32,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,13,01,LV115178-913RAINMAN-42-32,Villager Jean,177,10,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,14,01,LV115178-913RAINMAN-32-34,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,15,01,LV115178-913RAINMAN-34-34,Villager Jean,1062,60,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,16,01,LV115178-913RAINMAN-36-34,Villager Jean,708,40,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,17,01,LV115178-913RAINMAN-38-34,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500221,0,2,9/30/2024 19:48,12/5/2024 0:54,11/30/2024 4:48,12/1/2024 0:54,VEND1000,"
+Sanchez-Taylor",,10620,10620,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20241129-120CTNS,18,01,LV115178-913RAINMAN-42-30,Villager Jean,177,10,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,1,01,LV115178-RAINCLOUD-32-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,2,01,LV115178-RAINCLOUD-34-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,3,01,LV115178-RAINCLOUD-36-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,4,01,LV115178-RAINCLOUD-38-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,5,01,LV115178-RAINCLOUD-30-32,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,6,01,LV115178-RAINCLOUD-32-32,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,7,01,LV115178-RAINCLOUD-34-32,Villager Jean,796.5,45,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,8,01,LV115178-RAINCLOUD-36-32,Villager Jean,796.5,45,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,9,01,LV115178-RAINCLOUD-38-32,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,10,01,LV115178-RAINCLOUD-40-32,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,11,01,LV115178-RAINCLOUD-42-32,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,12,01,LV115178-RAINCLOUD-32-34,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,13,01,LV115178-RAINCLOUD-34-34,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,14,01,LV115178-RAINCLOUD-36-34,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,15,01,LV115178-RAINCLOUD-38-34,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,16,01,LV115178-RAINCLOUD-30-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,17,01,LV115178-RAINCLOUD-40-30,Villager Jean,177,10,17.7,,8.09666E+11,,,,
+500229,0,2,10/17/2024 19:07,12/5/2024 0:53,12/17/2024 4:07,12/1/2024 0:53,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241129-120ctns/20241213-141ctns,18,01,LV115178-RAINCLOUD-42-30,Villager Jean,88.5,5,17.7,,8.09666E+11,,,,
+500231,0,2,10/29/2024 22:38,1/15/2025 18:42,2/8/2025 0:28,1/10/2025 18:42,VEND1000,"
+Sanchez-Taylor",,5400,5400,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,1,01,FB3601937P-RINSEBLACK-20-STD,High Rise Workwear Jeans,1800,120,15,,8.09666E+11,,,,
+500231,0,2,10/29/2024 22:38,1/15/2025 18:42,2/8/2025 0:28,1/10/2025 18:42,VEND1000,"
+Sanchez-Taylor",,5400,5400,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,2,01,FB3601937P-RINSEBLACK-18-STD,High Rise Workwear Jeans,1200,80,15,,8.09666E+11,,,,
+500231,0,2,10/29/2024 22:38,1/15/2025 18:42,2/8/2025 0:28,1/10/2025 18:42,VEND1000,"
+Sanchez-Taylor",,5400,5400,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,3,01,FB3601937P-RINSEBLACK-16-STD,High Rise Workwear Jeans,1350,90,15,,8.09666E+11,,,,
+500231,0,2,10/29/2024 22:38,1/15/2025 18:42,2/8/2025 0:28,1/10/2025 18:42,VEND1000,"
+Sanchez-Taylor",,5400,5400,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,4,01,FB3601937P-RINSEBLACK-22-STD,High Rise Workwear Jeans,750,50,15,,8.09666E+11,,,,
+500231,0,2,10/29/2024 22:38,1/15/2025 18:42,2/8/2025 0:28,1/10/2025 18:42,VEND1000,"
+Sanchez-Taylor",,5400,5400,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,5,01,FB3601937P-RINSEBLACK-14-STD,High Rise Workwear Jeans,300,20,15,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,1,01,LV115198-327BLUEBOY-34-32,Signore Jean,942,60,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,2,01,LV115198-327BLUEBOY-32-32,Signore Jean,863.5,55,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,3,01,LV115198-327BLUEBOY-36-32,Signore Jean,785,50,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,4,01,LV115198-327BLUEBOY-38-32,Signore Jean,706.5,45,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,5,01,LV115198-327BLUEBOY-32-34,Signore Jean,471,30,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,6,01,LV115198-327BLUEBOY-36-34,Signore Jean,282.6,18,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,7,01,LV115198-327BLUEBOY-38-34,Signore Jean,282.6,18,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,8,01,LV115198-327BLUEBOY-42-32,Signore Jean,282.6,18,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,9,01,LV115198-327BLUEBOY-30-32,Signore Jean,235.5,15,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,10,01,LV115198-327BLUEBOY-40-32,Signore Jean,235.5,15,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,11,01,LV115198-327BLUEBOY-32-30,Signore Jean,235.5,15,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,12,01,LV115198-327BLUEBOY-36-30,Signore Jean,235.5,15,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,13,01,LV115198-327BLUEBOY-40-30,Signore Jean,235.5,15,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,14,01,LV115198-327BLUEBOY-42-30,Signore Jean,235.5,15,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,15,01,LV115198-327BLUEBOY-30-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,16,01,LV115198-327BLUEBOY-34-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,17,01,LV115198-327BLUEBOY-34-34,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,18,01,LV115198-327BLUEBOY-38-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500232,0,2,10/30/2024 18:09,1/15/2025 22:46,2/8/2025 0:27,1/15/2025 22:47,VEND1000,"
+Sanchez-Taylor",,6735.3,6735.3,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,19,01,LV115198-327BLUEBOY-40-34,Signore Jean,78.5,5,15.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,1,01,LV115178-BLACKRAINMAN-30-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,2,01,LV115178-BLACKRAINMAN-30-32,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,3,01,LV115178-BLACKRAINMAN-32-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,4,01,LV115178-BLACKRAINMAN-32-32,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,5,01,LV115178-BLACKRAINMAN-32-34,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,6,01,LV115178-BLACKRAINMAN-34-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,7,01,LV115178-BLACKRAINMAN-34-32,Villager Jean,796.5,45,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,8,01,LV115178-BLACKRAINMAN-34-34,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,9,01,LV115178-BLACKRAINMAN-36-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,10,01,LV115178-BLACKRAINMAN-36-32,Villager Jean,796.5,45,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,11,01,LV115178-BLACKRAINMAN-36-34,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,12,01,LV115178-BLACKRAINMAN-38-34,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,13,01,LV115178-BLACKRAINMAN-40-30,Villager Jean,177,10,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,14,01,LV115178-BLACKRAINMAN-40-32,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,15,01,LV115178-BLACKRAINMAN-42-30,Villager Jean,88.5,5,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,16,01,LV115178-BLACKRAINMAN-42-32,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,17,01,LV115178-BLACKRAINMAN-38-30,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500233,0,2,11/4/2024 19:55,12/4/2024 20:35,1/4/2025 3:55,11/30/2024 19:17,VEND1000,"
+Sanchez-Taylor",,6637.5,6637.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20241130-120CTNS,18,01,LV115178-BLACKRAINMAN-38-32,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500244,0,2,12/5/2024 23:07,1/15/2025 23:47,2/8/2025 0:27,1/10/2025 23:46,VEND1000,"
+Sanchez-Taylor",,1644,1644,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250122-248CTNS,1,01,SB3602007P-TWOTONE-14-STD,Cropped High-Rise Wide Leg Jeans,205.5,15,13.7,,8.09666E+11,,,,
+500244,0,2,12/5/2024 23:07,1/15/2025 23:47,2/8/2025 0:27,1/10/2025 23:46,VEND1000,"
+Sanchez-Taylor",,1644,1644,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250122-248CTNS,2,01,SB3602007P-TWOTONE-16-STD,Cropped High-Rise Wide Leg Jeans,411,30,13.7,,8.09666E+11,,,,
+500244,0,2,12/5/2024 23:07,1/15/2025 23:47,2/8/2025 0:27,1/10/2025 23:46,VEND1000,"
+Sanchez-Taylor",,1644,1644,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250122-248CTNS,3,01,SB3602007P-TWOTONE-18-STD,Cropped High-Rise Wide Leg Jeans,479.5,35,13.7,,8.09666E+11,,,,
+500244,0,2,12/5/2024 23:07,1/15/2025 23:47,2/8/2025 0:27,1/10/2025 23:46,VEND1000,"
+Sanchez-Taylor",,1644,1644,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250122-248CTNS,4,01,SB3602007P-TWOTONE-20-STD,Cropped High-Rise Wide Leg Jeans,274,20,13.7,,8.09666E+11,,,,
+500244,0,2,12/5/2024 23:07,1/15/2025 23:47,2/8/2025 0:27,1/10/2025 23:46,VEND1000,"
+Sanchez-Taylor",,1644,1644,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.","1434 Santa Anita Ave South El Monte, CA91733",,EL MONTE,CA,91730,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250122-248CTNS,5,01,SB3602007P-TWOTONE-22-STD,Cropped High-Rise Wide Leg Jeans,274,20,13.7,,8.09666E+11,,,,
+500246,0,2,12/6/2024 0:51,1/16/2025 0:53,2/8/2025 0:26,1/11/2025 0:53,VEND1000,"
+Sanchez-Taylor",,3251.25,3251.25,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,1,01,FA16553DM-2886VINDISL-32-32,Vera True Boyfriend Jean,765,60,12.75,,8.09667E+11,,,,
+500246,0,2,12/6/2024 0:51,1/16/2025 0:53,2/8/2025 0:26,1/11/2025 0:53,VEND1000,"
+Sanchez-Taylor",,3251.25,3251.25,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,2,01,FA16553DM-2886VINDISL-31-32,Vera True Boyfriend Jean,637.5,50,12.75,,8.09667E+11,,,,
+500246,0,2,12/6/2024 0:51,1/16/2025 0:53,2/8/2025 0:26,1/11/2025 0:53,VEND1000,"
+Sanchez-Taylor",,3251.25,3251.25,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,3,01,FA16553DM-2886VINDISL-30-32,Vera True Boyfriend Jean,637.5,50,12.75,,8.09667E+11,,,,
+500246,0,2,12/6/2024 0:51,1/16/2025 0:53,2/8/2025 0:26,1/11/2025 0:53,VEND1000,"
+Sanchez-Taylor",,3251.25,3251.25,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,4,01,FA16553DM-2886VINDISL-29-32,Vera True Boyfriend Jean,510,40,12.75,,8.09667E+11,,,,
+500246,0,2,12/6/2024 0:51,1/16/2025 0:53,2/8/2025 0:26,1/11/2025 0:53,VEND1000,"
+Sanchez-Taylor",,3251.25,3251.25,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,5,01,FA16553DM-2886VINDISL-28-32,Vera True Boyfriend Jean,382.5,30,12.75,,8.09667E+11,,,,
+500246,0,2,12/6/2024 0:51,1/16/2025 0:53,2/8/2025 0:26,1/11/2025 0:53,VEND1000,"
+Sanchez-Taylor",,3251.25,3251.25,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,6,01,FA16553DM-2886VINDISL-27-32,Vera True Boyfriend Jean,191.25,15,12.75,,8.09667E+11,,,,
+500246,0,2,12/6/2024 0:51,1/16/2025 0:53,2/8/2025 0:26,1/11/2025 0:53,VEND1000,"
+Sanchez-Taylor",,3251.25,3251.25,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250122-248CTNS,7,01,FA16553DM-2886VINDISL-26-32,Vera True Boyfriend Jean,127.5,10,12.75,,8.09667E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,1,01,LV115178-913RAINMAN-34-32,Villager Jean,2478,140,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,2,01,LV115178-913RAINMAN-34-34,Villager Jean,2124,120,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,3,01,LV115178-913RAINMAN-32-32,Villager Jean,1593,90,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,4,01,LV115178-913RAINMAN-36-32,Villager Jean,1416,80,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,5,01,LV115178-913RAINMAN-36-34,Villager Jean,1770,100,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,6,01,LV115178-913RAINMAN-38-32,Villager Jean,1416,80,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,7,01,LV115178-913RAINMAN-30-30,Villager Jean,885,50,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,8,01,LV115178-913RAINMAN-32-34,Villager Jean,1062,60,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,9,01,LV115178-913RAINMAN-32-30,Villager Jean,885,50,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,10,01,LV115178-913RAINMAN-40-32,Villager Jean,708,40,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,11,01,LV115178-913RAINMAN-34-30,Villager Jean,885,50,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,12,01,LV115178-913RAINMAN-38-30,Villager Jean,1062,60,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,13,01,LV115178-913RAINMAN-36-30,Villager Jean,885,50,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,14,01,LV115178-913RAINMAN-38-34,Villager Jean,885,50,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,15,01,LV115178-913RAINMAN-30-32,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,16,01,LV115178-913RAINMAN-40-30,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,17,01,LV115178-913RAINMAN-42-32,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500255,0,2,12/11/2024 1:07,1/30/2025 1:08,4/4/2025 23:15,1/25/2025 1:08,VEND1000,"
+Sanchez-Taylor",,20178,20178,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250319-74ctns,18,01,LV115178-913RAINMAN-42-30,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500257,0,2,1/7/2025 20:05,3/5/2025 20:08,4/25/2025 23:08,3/5/2025 20:08,VEND1000,"
+Sanchez-Taylor",,5176,5176,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,1,01,FA16556DMB-2942UNFORGV-16-34,"Kylie 24"" Flare Jean -- Dark Blue",1552.8,120,12.94,,8.09666E+11,,,,
+500257,0,2,1/7/2025 20:05,3/5/2025 20:08,4/25/2025 23:08,3/5/2025 20:08,VEND1000,"
+Sanchez-Taylor",,5176,5176,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,2,01,FA16556DMB-2942UNFORGV-22-34,"Kylie 24"" Flare Jean -- Dark Blue",647,50,12.94,,8.09666E+11,,,,
+500257,0,2,1/7/2025 20:05,3/5/2025 20:08,4/25/2025 23:08,3/5/2025 20:08,VEND1000,"
+Sanchez-Taylor",,5176,5176,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,3,01,FA16556DMB-2942UNFORGV-14-34,"Kylie 24"" Flare Jean -- Dark Blue",647,50,12.94,,8.09666E+11,,,,
+500257,0,2,1/7/2025 20:05,3/5/2025 20:08,4/25/2025 23:08,3/5/2025 20:08,VEND1000,"
+Sanchez-Taylor",,5176,5176,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,4,01,FA16556DMB-2942UNFORGV-18-34,"Kylie 24"" Flare Jean -- Dark Blue",1552.8,120,12.94,,8.09666E+11,,,,
+500257,0,2,1/7/2025 20:05,3/5/2025 20:08,4/25/2025 23:08,3/5/2025 20:08,VEND1000,"
+Sanchez-Taylor",,5176,5176,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,5,01,FA16556DMB-2942UNFORGV-20-34,"Kylie 24"" Flare Jean -- Dark Blue",776.4,60,12.94,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,1,01,LV115198-327BLUEBOY-34-32,Signore Jean,1884,120,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,2,01,LV115198-327BLUEBOY-32-32,Signore Jean,1256,80,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,3,01,LV115198-327BLUEBOY-38-32,Signore Jean,1256,80,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,4,01,LV115198-327BLUEBOY-36-32,Signore Jean,1099,70,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,5,01,LV115198-327BLUEBOY-32-34,Signore Jean,785,50,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,6,01,LV115198-327BLUEBOY-40-32,Signore Jean,471,30,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,7,01,LV115198-327BLUEBOY-42-32,Signore Jean,471,30,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,8,01,LV115198-327BLUEBOY-36-34,Signore Jean,392.5,25,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,9,01,LV115198-327BLUEBOY-38-34,Signore Jean,314,20,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,10,01,LV115198-327BLUEBOY-30-32,Signore Jean,235.5,15,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,11,01,LV115198-327BLUEBOY-32-30,Signore Jean,235.5,15,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,12,01,LV115198-327BLUEBOY-30-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,13,01,LV115198-327BLUEBOY-36-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,14,01,LV115198-327BLUEBOY-38-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,15,01,LV115198-327BLUEBOY-40-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,16,01,LV115198-327BLUEBOY-42-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,17,01,LV115198-327BLUEBOY-34-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,18,01,LV115198-327BLUEBOY-34-34,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500258,0,2,11/3/2024 15:00,3/19/2025 20:00,4/25/2025 23:08,3/19/2025 20:00,VEND1000,"
+Sanchez-Taylor",,9577,9577,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,19,01,LV115198-327BLUEBOY-40-34,Signore Jean,78.5,5,15.7,,8.09666E+11,,,,
+500268,0,2,2/13/2025 22:16,3/12/2025 21:20,4/25/2025 23:09,3/12/2025 21:21,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,1,01,FB3601937P-DARKRINSE-18-STD,High Rise Workwear Jeans,375,25,15,,8.09666E+11,,,,
+500268,0,2,2/13/2025 22:16,3/12/2025 21:20,4/25/2025 23:09,3/12/2025 21:21,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,2,01,FB3601937P-DARKRINSE-20-STD,High Rise Workwear Jeans,375,25,15,,8.09666E+11,,,,
+500268,0,2,2/13/2025 22:16,3/12/2025 21:20,4/25/2025 23:09,3/12/2025 21:21,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,3,01,FB3601937P-DARKRINSE-16-STD,High Rise Workwear Jeans,450,30,15,,8.09666E+11,,,,
+500268,0,2,2/13/2025 22:16,3/12/2025 21:20,4/25/2025 23:09,3/12/2025 21:21,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,4,01,FB3601937P-DARKRINSE-22-STD,High Rise Workwear Jeans,300,20,15,,8.09666E+11,,,,
+500268,0,2,2/13/2025 22:16,3/12/2025 21:20,4/25/2025 23:09,3/12/2025 21:21,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,5,01,FB3601937P-DARKRINSE-14-STD,High Rise Workwear Jeans,300,20,15,,8.09666E+11,,,,
+500269,0,2,2/13/2025 23:01,3/12/2025 22:02,4/4/2025 23:18,3/12/2025 22:03,VEND1000,"
+Sanchez-Taylor",,1560,1560,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250319-74ctns,1,01,SB3602026P-3154BERMUDA-14-STD,Plus Size High Waist Denim Pencil Skirt Lace,195,15,13,,8.09666E+11,,,,
+500269,0,2,2/13/2025 23:01,3/12/2025 22:02,4/4/2025 23:18,3/12/2025 22:03,VEND1000,"
+Sanchez-Taylor",,1560,1560,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250319-74ctns,2,01,SB3602026P-3154BERMUDA-16-STD,Plus Size High Waist Denim Pencil Skirt Lace,325,25,13,,8.09666E+11,,,,
+500269,0,2,2/13/2025 23:01,3/12/2025 22:02,4/4/2025 23:18,3/12/2025 22:03,VEND1000,"
+Sanchez-Taylor",,1560,1560,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250319-74ctns,3,01,SB3602026P-3154BERMUDA-18-STD,Plus Size High Waist Denim Pencil Skirt Lace,325,25,13,,8.09666E+11,,,,
+500269,0,2,2/13/2025 23:01,3/12/2025 22:02,4/4/2025 23:18,3/12/2025 22:03,VEND1000,"
+Sanchez-Taylor",,1560,1560,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250319-74ctns,4,01,SB3602026P-3154BERMUDA-20-STD,Plus Size High Waist Denim Pencil Skirt Lace,390,30,13,,8.09666E+11,,,,
+500269,0,2,2/13/2025 23:01,3/12/2025 22:02,4/4/2025 23:18,3/12/2025 22:03,VEND1000,"
+Sanchez-Taylor",,1560,1560,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250319-74ctns,5,01,SB3602026P-3154BERMUDA-22-STD,Plus Size High Waist Denim Pencil Skirt Lace,325,25,13,,8.09666E+11,,,,
+500270,0,2,2/17/2025 20:17,3/26/2025 19:26,4/25/2025 23:11,3/26/2025 19:26,VEND1000,"
+Sanchez-Taylor",,1812.5,1812.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,1,01,FB3601941P-INDIGORINSE-18-STD,Relaxed Straight Leg Released Hem Jean,580,40,14.5,,8.09666E+11,,,,
+500270,0,2,2/17/2025 20:17,3/26/2025 19:26,4/25/2025 23:11,3/26/2025 19:26,VEND1000,"
+Sanchez-Taylor",,1812.5,1812.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,2,01,FB3601941P-INDIGORINSE-20-STD,Relaxed Straight Leg Released Hem Jean,435,30,14.5,,8.09666E+11,,,,
+500270,0,2,2/17/2025 20:17,3/26/2025 19:26,4/25/2025 23:11,3/26/2025 19:26,VEND1000,"
+Sanchez-Taylor",,1812.5,1812.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,3,01,FB3601941P-INDIGORINSE-16-STD,Relaxed Straight Leg Released Hem Jean,435,30,14.5,,8.09666E+11,,,,
+500270,0,2,2/17/2025 20:17,3/26/2025 19:26,4/25/2025 23:11,3/26/2025 19:26,VEND1000,"
+Sanchez-Taylor",,1812.5,1812.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,4,01,FB3601941P-INDIGORINSE-14-STD,Relaxed Straight Leg Released Hem Jean,217.5,15,14.5,,8.09666E+11,,,,
+500270,0,2,2/17/2025 20:17,3/26/2025 19:26,4/25/2025 23:11,3/26/2025 19:26,VEND1000,"
+Sanchez-Taylor",,1812.5,1812.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,5,01,FB3601941P-INDIGORINSE-22-STD,Relaxed Straight Leg Released Hem Jean,145,10,14.5,,8.09666E+11,,,,
+500272,0,2,2/20/2025 20:08,3/26/2025 19:27,7/7/2025 22:49,3/26/2025 19:27,VEND1000,"
+Sanchez-Taylor",,2890.8,2890.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,1,01,FA15538DMB-RINSEWSFT-18-33,Plus Size Scarlett Basic Black Slim Boot Cut Jean,919.8,70,13.14,,8.09667E+11,,,,
+500272,0,2,2/20/2025 20:08,3/26/2025 19:27,7/7/2025 22:49,3/26/2025 19:27,VEND1000,"
+Sanchez-Taylor",,2890.8,2890.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,2,01,FA15538DMB-RINSEWSFT-16-33,Plus Size Scarlett Basic Black Slim Boot Cut Jean,919.8,70,13.14,,8.09667E+11,,,,
+500272,0,2,2/20/2025 20:08,3/26/2025 19:27,7/7/2025 22:49,3/26/2025 19:27,VEND1000,"
+Sanchez-Taylor",,2890.8,2890.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,3,01,FA15538DMB-RINSEWSFT-20-33,Plus Size Scarlett Basic Black Slim Boot Cut Jean,657,50,13.14,,8.09667E+11,,,,
+500272,0,2,2/20/2025 20:08,3/26/2025 19:27,7/7/2025 22:49,3/26/2025 19:27,VEND1000,"
+Sanchez-Taylor",,2890.8,2890.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,4,01,FA15538DMB-RINSEWSFT-22-33,Plus Size Scarlett Basic Black Slim Boot Cut Jean,197.1,15,13.14,,8.09667E+11,,,,
+500272,0,2,2/20/2025 20:08,3/26/2025 19:27,7/7/2025 22:49,3/26/2025 19:27,VEND1000,"
+Sanchez-Taylor",,2890.8,2890.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,5,01,FA15538DMB-RINSEWSFT-14-33,Plus Size Scarlett Basic Black Slim Boot Cut Jean,131.4,10,13.14,,8.09667E+11,,,,
+500272,0,2,2/20/2025 20:08,3/26/2025 19:27,7/7/2025 22:49,3/26/2025 19:27,VEND1000,"
+Sanchez-Taylor",,2890.8,2890.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,6,01,FA15538DMB-RINSEWSFT-24-33,Plus Size Scarlett Basic Black Slim Boot Cut Jean,65.7,5,13.14,,8.09667E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,1,01,LV125198-1456CARAMEL-34-34,Signore Jean,825,50,16.5,,8.09667E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,2,01,LV125198-1456CARAMEL-34-32,Signore Jean,990,60,16.5,,8.09667E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,3,01,LV125198-1456CARAMEL-36-34,Signore Jean,495,30,16.5,,8.09667E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,4,01,LV125198-1456CARAMEL-32-32,Signore Jean,577.5,35,16.5,,8.09667E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,5,01,LV125198-1456CARAMEL-32-34,Signore Jean,247.5,15,16.5,,8.09666E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,6,01,LV125198-1456CARAMEL-38-32,Signore Jean,577.5,35,16.5,,8.09667E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,7,01,LV125198-1456CARAMEL-36-30,Signore Jean,495,30,16.5,,8.09666E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,8,01,LV125198-1456CARAMEL-36-32,Signore Jean,660,40,16.5,,8.09667E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,9,01,LV125198-1456CARAMEL-38-30,Signore Jean,330,20,16.5,,8.09666E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,10,01,LV125198-1456CARAMEL-32-30,Signore Jean,165,10,16.5,,8.09666E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,11,01,LV125198-1456CARAMEL-30-32,Signore Jean,82.5,5,16.5,,8.09666E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,12,01,LV125198-1456CARAMEL-34-30,Signore Jean,165,10,16.5,,8.09666E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,13,01,LV125198-1456CARAMEL-40-30,Signore Jean,82.5,5,16.5,,8.09666E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,14,01,LV125198-1456CARAMEL-40-32,Signore Jean,165,10,16.5,,8.09667E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,15,01,LV125198-1456CARAMEL-42-30,Signore Jean,82.5,5,16.5,,8.09666E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,16,01,LV125198-1456CARAMEL-42-32,Signore Jean,82.5,5,16.5,,8.09667E+11,,,,
+500279,0,2,3/5/2025 21:35,4/9/2025 18:23,4/25/2025 23:10,4/9/2025 18:23,VEND1000,"
+Sanchez-Taylor",,6352.5,6352.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250409-140Ctns,17,01,LV125198-1456CARAMEL-38-34,Signore Jean,330,20,16.5,,8.09667E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,1,01,LV125178-981KHATINT-34-32,Distressed Relaxed Straight Jean,751.5,45,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,2,01,LV125178-981KHATINT-36-34,Distressed Relaxed Straight Jean,417.5,25,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,3,01,LV125178-981KHATINT-36-30,Distressed Relaxed Straight Jean,334,20,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,4,01,LV125178-981KHATINT-38-32,Distressed Relaxed Straight Jean,668,40,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,5,01,LV125178-981KHATINT-36-32,Distressed Relaxed Straight Jean,501,30,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,6,01,LV125178-981KHATINT-32-32,Distressed Relaxed Straight Jean,417.5,25,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,7,01,LV125178-981KHATINT-34-34,Distressed Relaxed Straight Jean,501,30,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,8,01,LV125178-981KHATINT-34-30,Distressed Relaxed Straight Jean,417.5,25,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,9,01,LV125178-981KHATINT-38-30,Distressed Relaxed Straight Jean,334,20,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,10,01,LV125178-981KHATINT-30-32,Distressed Relaxed Straight Jean,83.5,5,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,11,01,LV125178-981KHATINT-30-30,Distressed Relaxed Straight Jean,167,10,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,12,01,LV125178-981KHATINT-40-30,Distressed Relaxed Straight Jean,167,10,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,13,01,LV125178-981KHATINT-40-32,Distressed Relaxed Straight Jean,250.5,15,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,14,01,LV125178-981KHATINT-42-30,Distressed Relaxed Straight Jean,83.5,5,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,15,01,LV125178-981KHATINT-42-32,Distressed Relaxed Straight Jean,83.5,5,16.7,,8.09666E+11,,,,
+500280,0,2,3/5/2025 21:39,4/23/2025 21:02,7/7/2025 22:45,4/23/2025 21:03,VEND1000,"
+Sanchez-Taylor",,5344,5344,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250618-72Ctns,16,01,LV125178-981KHATINT-38-34,Distressed Relaxed Straight Jean,167,10,16.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,1,01,LV125198-900SCARYSP-32-32,Signore Jean,471,30,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,2,01,LV125198-900SCARYSP-34-32,Signore Jean,628,40,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,3,01,LV125198-900SCARYSP-36-32,Signore Jean,628,40,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,4,01,LV125198-900SCARYSP-38-32,Signore Jean,471,30,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,5,01,LV125198-900SCARYSP-40-32,Signore Jean,314,20,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,6,01,LV125198-900SCARYSP-42-32,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,7,01,LV125198-900SCARYSP-34-34,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,8,01,LV125198-900SCARYSP-36-34,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,9,01,LV125198-900SCARYSP-38-34,Signore Jean,78.5,5,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,10,01,LV125198-900SCARYSP-30-30,Signore Jean,78.5,5,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,11,01,LV125198-900SCARYSP-32-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,12,01,LV125198-900SCARYSP-34-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,13,01,LV125198-900SCARYSP-36-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,14,01,LV125198-900SCARYSP-38-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,15,01,LV125198-900SCARYSP-40-30,Signore Jean,78.5,5,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,16,01,LV125198-900SCARYSP-42-30,Signore Jean,78.5,5,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,17,01,LV125198-900SCARYSP-30-32,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500281,0,2,3/5/2025 22:05,4/23/2025 21:05,7/7/2025 23:02,4/23/2025 21:06,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,18,01,LV125198-900SCARYSP-32-34,Signore Jean,78.5,5,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,1,01,LV255504-326UNIQBL-30-30,Relaxed Bootcut Premium Jeans,78.5,5,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,2,01,LV255504-326UNIQBL-32-30,Relaxed Bootcut Premium Jeans,157,10,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,3,01,LV255504-326UNIQBL-34-30,Relaxed Bootcut Premium Jeans,157,10,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,4,01,LV255504-326UNIQBL-36-30,Relaxed Bootcut Premium Jeans,157,10,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,5,01,LV255504-326UNIQBL-38-30,Relaxed Bootcut Premium Jeans,157,10,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,6,01,LV255504-326UNIQBL-40-30,Relaxed Bootcut Premium Jeans,78.5,5,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,7,01,LV255504-326UNIQBL-42-30,Relaxed Bootcut Premium Jeans,78.5,5,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,8,01,LV255504-326UNIQBL-30-32,Relaxed Bootcut Premium Jeans,157,10,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,9,01,LV255504-326UNIQBL-32-32,Relaxed Bootcut Premium Jeans,471,30,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,10,01,LV255504-326UNIQBL-34-32,Relaxed Bootcut Premium Jeans,628,40,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,11,01,LV255504-326UNIQBL-36-32,Relaxed Bootcut Premium Jeans,628,40,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,12,01,LV255504-326UNIQBL-38-32,Relaxed Bootcut Premium Jeans,471,30,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,13,01,LV255504-326UNIQBL-40-32,Relaxed Bootcut Premium Jeans,314,20,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,14,01,LV255504-326UNIQBL-42-32,Relaxed Bootcut Premium Jeans,157,10,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,15,01,LV255504-326UNIQBL-32-34,Relaxed Bootcut Premium Jeans,78.5,5,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,16,01,LV255504-326UNIQBL-34-34,Relaxed Bootcut Premium Jeans,157,10,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,17,01,LV255504-326UNIQBL-36-34,Relaxed Bootcut Premium Jeans,157,10,15.7,,8.09666E+11,,,,
+500283,0,2,3/5/2025 23:08,4/23/2025 22:11,7/7/2025 22:45,4/23/2025 22:11,VEND1000,"
+Sanchez-Taylor",,4160.5,4160.5,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20250618-72Ctns,18,01,LV255504-326UNIQBL-38-34,Relaxed Bootcut Premium Jeans,78.5,5,15.7,,8.09666E+11,,,,
+500327,0,2,6/19/2025 23:33,7/30/2025 23:36,9/12/2025 18:09,7/30/2025 23:37,VEND1000,"
+Sanchez-Taylor",,1731.6,1731.6,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,1,01,FB3615136P-3015PJSTONER-18-STD,Plus Size Verla Curvy Fit Cropped Frayed Boyfriend Jeans,432.9,30,14.43,,8.09667E+11,,,,
+500327,0,2,6/19/2025 23:33,7/30/2025 23:36,9/12/2025 18:09,7/30/2025 23:37,VEND1000,"
+Sanchez-Taylor",,1731.6,1731.6,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,2,01,FB3615136P-3015PJSTONER-16-STD,Plus Size Verla Curvy Fit Cropped Frayed Boyfriend Jeans,432.9,30,14.43,,8.09667E+11,,,,
+500327,0,2,6/19/2025 23:33,7/30/2025 23:36,9/12/2025 18:09,7/30/2025 23:37,VEND1000,"
+Sanchez-Taylor",,1731.6,1731.6,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,3,01,FB3615136P-3015PJSTONER-20-STD,Plus Size Verla Curvy Fit Cropped Frayed Boyfriend Jeans,432.9,30,14.43,,8.09667E+11,,,,
+500327,0,2,6/19/2025 23:33,7/30/2025 23:36,9/12/2025 18:09,7/30/2025 23:37,VEND1000,"
+Sanchez-Taylor",,1731.6,1731.6,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,4,01,FB3615136P-3015PJSTONER-14-STD,Plus Size Verla Curvy Fit Cropped Frayed Boyfriend Jeans,288.6,20,14.43,,8.09667E+11,,,,
+500327,0,2,6/19/2025 23:33,7/30/2025 23:36,9/12/2025 18:09,7/30/2025 23:37,VEND1000,"
+Sanchez-Taylor",,1731.6,1731.6,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,5,01,FB3615136P-3015PJSTONER-22-STD,Plus Size Verla Curvy Fit Cropped Frayed Boyfriend Jeans,144.3,10,14.43,,8.09667E+11,,,,
+500330,0,2,6/23/2025 23:14,7/30/2025 23:17,9/12/2025 18:09,7/30/2025 23:17,VEND1000,"
+Sanchez-Taylor",,1450,1450,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,1,01,FB3601941P-BLACKVINTAGE-18-STD,Relaxed Straight Leg Released Hem Jean,580,40,14.5,,8.09666E+11,,,,
+500330,0,2,6/23/2025 23:14,7/30/2025 23:17,9/12/2025 18:09,7/30/2025 23:17,VEND1000,"
+Sanchez-Taylor",,1450,1450,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,2,01,FB3601941P-BLACKVINTAGE-20-STD,Relaxed Straight Leg Released Hem Jean,435,30,14.5,,8.09666E+11,,,,
+500330,0,2,6/23/2025 23:14,7/30/2025 23:17,9/12/2025 18:09,7/30/2025 23:17,VEND1000,"
+Sanchez-Taylor",,1450,1450,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,3,01,FB3601941P-BLACKVINTAGE-16-STD,Relaxed Straight Leg Released Hem Jean,290,20,14.5,,8.09666E+11,,,,
+500330,0,2,6/23/2025 23:14,7/30/2025 23:17,9/12/2025 18:09,7/30/2025 23:17,VEND1000,"
+Sanchez-Taylor",,1450,1450,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,4,01,FB3601941P-BLACKVINTAGE-22-STD,Relaxed Straight Leg Released Hem Jean,72.5,5,14.5,,8.09666E+11,,,,
+500330,0,2,6/23/2025 23:14,7/30/2025 23:17,9/12/2025 18:09,7/30/2025 23:17,VEND1000,"
+Sanchez-Taylor",,1450,1450,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,5,01,FB3601941P-BLACKVINTAGE-14-STD,Relaxed Straight Leg Released Hem Jean,72.5,5,14.5,,8.09666E+11,,,,
+500337,0,2,7/17/2025 0:30,8/21/2025 18:10,9/12/2025 18:10,8/21/2025 18:10,VEND1000,"
+Sanchez-Taylor",,1539.6,1539.6,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,1,01,FA16556DM-2942UNFORGV-28-34,"Kylie 24"" Flare Jean -- Dark Blue",513.2,40,12.83,,8.09667E+11,,,,
+500337,0,2,7/17/2025 0:30,8/21/2025 18:10,9/12/2025 18:10,8/21/2025 18:10,VEND1000,"
+Sanchez-Taylor",,1539.6,1539.6,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,2,01,FA16556DM-2942UNFORGV-26-34,"Kylie 24"" Flare Jean -- Dark Blue",128.3,10,12.83,,8.09667E+11,,,,
+500337,0,2,7/17/2025 0:30,8/21/2025 18:10,9/12/2025 18:10,8/21/2025 18:10,VEND1000,"
+Sanchez-Taylor",,1539.6,1539.6,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,3,01,FA16556DM-2942UNFORGV-27-34,"Kylie 24"" Flare Jean -- Dark Blue",384.9,30,12.83,,8.09667E+11,,,,
+500337,0,2,7/17/2025 0:30,8/21/2025 18:10,9/12/2025 18:10,8/21/2025 18:10,VEND1000,"
+Sanchez-Taylor",,1539.6,1539.6,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250827-335ctns,4,01,FA16556DM-2942UNFORGV-29-34,"Kylie 24"" Flare Jean -- Dark Blue",513.2,40,12.83,,8.09667E+11,,,,
+500344,0,2,7/31/2025 18:38,8/27/2025 18:46,10/3/2025 23:24,8/27/2025 18:47,VEND1000,"
+Sanchez-Taylor",,1912.5,1912.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,1,01,FA16553DM-2886VINDISL-32-32,Vera True Boyfriend Jean,637.5,50,12.75,,8.09667E+11,,,,
+500344,0,2,7/31/2025 18:38,8/27/2025 18:46,10/3/2025 23:24,8/27/2025 18:47,VEND1000,"
+Sanchez-Taylor",,1912.5,1912.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,2,01,FA16553DM-2886VINDISL-30-32,Vera True Boyfriend Jean,382.5,30,12.75,,8.09667E+11,,,,
+500344,0,2,7/31/2025 18:38,8/27/2025 18:46,10/3/2025 23:24,8/27/2025 18:47,VEND1000,"
+Sanchez-Taylor",,1912.5,1912.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,3,01,FA16553DM-2886VINDISL-31-32,Vera True Boyfriend Jean,255,20,12.75,,8.09667E+11,,,,
+500344,0,2,7/31/2025 18:38,8/27/2025 18:46,10/3/2025 23:24,8/27/2025 18:47,VEND1000,"
+Sanchez-Taylor",,1912.5,1912.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,4,01,FA16553DM-2886VINDISL-27-32,Vera True Boyfriend Jean,255,20,12.75,,8.09667E+11,,,,
+500344,0,2,7/31/2025 18:38,8/27/2025 18:46,10/3/2025 23:24,8/27/2025 18:47,VEND1000,"
+Sanchez-Taylor",,1912.5,1912.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,5,01,FA16553DM-2886VINDISL-29-32,Vera True Boyfriend Jean,127.5,10,12.75,,8.09667E+11,,,,
+500344,0,2,7/31/2025 18:38,8/27/2025 18:46,10/3/2025 23:24,8/27/2025 18:47,VEND1000,"
+Sanchez-Taylor",,1912.5,1912.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,6,01,FA16553DM-2886VINDISL-28-32,Vera True Boyfriend Jean,127.5,10,12.75,,8.09667E+11,,,,
+500344,0,2,7/31/2025 18:38,8/27/2025 18:46,10/3/2025 23:24,8/27/2025 18:47,VEND1000,"
+Sanchez-Taylor",,1912.5,1912.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,7,01,FA16553DM-2886VINDISL-26-32,Vera True Boyfriend Jean,127.5,10,12.75,,8.09667E+11,,,,
+500345,0,2,7/31/2025 18:58,8/27/2025 19:16,10/3/2025 23:25,8/27/2025 19:16,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,1,01,FA16556DMB-2886WASH-18-34,"Kylie 24"" Flare Jean -- Dark Blue",258.8,20,12.94,,8.09666E+11,,,,
+500345,0,2,7/31/2025 18:58,8/27/2025 19:16,10/3/2025 23:25,8/27/2025 19:16,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,2,01,FA16556DMB-2886WASH-16-34,"Kylie 24"" Flare Jean -- Dark Blue",388.2,30,12.94,,8.09666E+11,,,,
+500345,0,2,7/31/2025 18:58,8/27/2025 19:16,10/3/2025 23:25,8/27/2025 19:16,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,3,01,FA16556DMB-2886WASH-14-34,"Kylie 24"" Flare Jean -- Dark Blue",129.4,10,12.94,,8.09666E+11,,,,
+500345,0,2,7/31/2025 18:58,8/27/2025 19:16,10/3/2025 23:25,8/27/2025 19:16,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,4,01,FA16556DMB-2886WASH-20-34,"Kylie 24"" Flare Jean -- Dark Blue",388.2,30,12.94,,8.09666E+11,,,,
+500345,0,2,7/31/2025 18:58,8/27/2025 19:16,10/3/2025 23:25,8/27/2025 19:16,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,5,01,FA16556DMB-2886WASH-22-34,"Kylie 24"" Flare Jean -- Dark Blue",388.2,30,12.94,,8.09666E+11,,,,
+500346,0,2,7/31/2025 18:59,8/27/2025 21:13,10/3/2025 23:25,8/27/2025 21:14,VEND1000,"
+Sanchez-Taylor",,1415,1415,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,1,01,SP16536DM-2941BARBWIRE-31-32,Chanelle Vintage Destroyed Wash Extra Curvy Fit Skinny Boyfriend Jeans,141.5,10,14.15,,8.09667E+11,,,,
+500346,0,2,7/31/2025 18:59,8/27/2025 21:13,10/3/2025 23:25,8/27/2025 21:14,VEND1000,"
+Sanchez-Taylor",,1415,1415,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,2,01,SP16536DM-2941BARBWIRE-32-32,Chanelle Vintage Destroyed Wash Extra Curvy Fit Skinny Boyfriend Jeans,283,20,14.15,,8.09667E+11,,,,
+500346,0,2,7/31/2025 18:59,8/27/2025 21:13,10/3/2025 23:25,8/27/2025 21:14,VEND1000,"
+Sanchez-Taylor",,1415,1415,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,3,01,SP16536DM-2941BARBWIRE-30-32,Chanelle Vintage Destroyed Wash Extra Curvy Fit Skinny Boyfriend Jeans,283,20,14.15,,8.09667E+11,,,,
+500346,0,2,7/31/2025 18:59,8/27/2025 21:13,10/3/2025 23:25,8/27/2025 21:14,VEND1000,"
+Sanchez-Taylor",,1415,1415,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,4,01,SP16536DM-2941BARBWIRE-26-32,Chanelle Vintage Destroyed Wash Extra Curvy Fit Skinny Boyfriend Jeans,141.5,10,14.15,,8.09667E+11,,,,
+500346,0,2,7/31/2025 18:59,8/27/2025 21:13,10/3/2025 23:25,8/27/2025 21:14,VEND1000,"
+Sanchez-Taylor",,1415,1415,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,5,01,SP16536DM-2941BARBWIRE-27-32,Chanelle Vintage Destroyed Wash Extra Curvy Fit Skinny Boyfriend Jeans,141.5,10,14.15,,8.09667E+11,,,,
+500346,0,2,7/31/2025 18:59,8/27/2025 21:13,10/3/2025 23:25,8/27/2025 21:14,VEND1000,"
+Sanchez-Taylor",,1415,1415,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,6,01,SP16536DM-2941BARBWIRE-28-32,Chanelle Vintage Destroyed Wash Extra Curvy Fit Skinny Boyfriend Jeans,212.25,15,14.15,,8.09667E+11,,,,
+500346,0,2,7/31/2025 18:59,8/27/2025 21:13,10/3/2025 23:25,8/27/2025 21:14,VEND1000,"
+Sanchez-Taylor",,1415,1415,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20250917-37 CTNS,7,01,SP16536DM-2941BARBWIRE-29-32,Chanelle Vintage Destroyed Wash Extra Curvy Fit Skinny Boyfriend Jeans,212.25,15,14.15,,8.09667E+11,,,,
+500361,0,2,10/6/2025 23:14,10/29/2025 23:45,11/22/2025 0:45,10/29/2025 23:46,VEND1000,"
+Sanchez-Taylor",,2550,2550,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS,1,01,FA16553DM-2886VINDISL-31-32,Vera True Boyfriend Jean,637.5,50,12.75,,8.09667E+11,,,,
+500361,0,2,10/6/2025 23:14,10/29/2025 23:45,11/22/2025 0:45,10/29/2025 23:46,VEND1000,"
+Sanchez-Taylor",,2550,2550,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS,2,01,FA16553DM-2886VINDISL-30-32,Vera True Boyfriend Jean,637.5,50,12.75,,8.09667E+11,,,,
+500361,0,2,10/6/2025 23:14,10/29/2025 23:45,11/22/2025 0:45,10/29/2025 23:46,VEND1000,"
+Sanchez-Taylor",,2550,2550,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS,3,01,FA16553DM-2886VINDISL-28-32,Vera True Boyfriend Jean,765,60,12.75,,8.09667E+11,,,,
+500361,0,2,10/6/2025 23:14,10/29/2025 23:45,11/22/2025 0:45,10/29/2025 23:46,VEND1000,"
+Sanchez-Taylor",,2550,2550,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS,4,01,FA16553DM-2886VINDISL-29-32,Vera True Boyfriend Jean,510,40,12.75,,8.09667E+11,,,,
+500362,0,2,10/6/2025 23:25,10/29/2025 23:35,11/22/2025 0:35,10/29/2025 23:35,VEND1000,"
+Sanchez-Taylor",,2512,2512,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,1,01,LV115198-327BLUEBOY-32-30,Signore Jean,314,20,15.7,,8.09666E+11,,,,
+500362,0,2,10/6/2025 23:25,10/29/2025 23:35,11/22/2025 0:35,10/29/2025 23:35,VEND1000,"
+Sanchez-Taylor",,2512,2512,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,2,01,LV115198-327BLUEBOY-36-30,Signore Jean,392.5,25,15.7,,8.09666E+11,,,,
+500362,0,2,10/6/2025 23:25,10/29/2025 23:35,11/22/2025 0:35,10/29/2025 23:35,VEND1000,"
+Sanchez-Taylor",,2512,2512,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,3,01,LV115198-327BLUEBOY-36-34,Signore Jean,314,20,15.7,,8.09666E+11,,,,
+500362,0,2,10/6/2025 23:25,10/29/2025 23:35,11/22/2025 0:35,10/29/2025 23:35,VEND1000,"
+Sanchez-Taylor",,2512,2512,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,4,01,LV115198-327BLUEBOY-40-32,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500362,0,2,10/6/2025 23:25,10/29/2025 23:35,11/22/2025 0:35,10/29/2025 23:35,VEND1000,"
+Sanchez-Taylor",,2512,2512,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,5,01,LV115198-327BLUEBOY-30-32,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500362,0,2,10/6/2025 23:25,10/29/2025 23:35,11/22/2025 0:35,10/29/2025 23:35,VEND1000,"
+Sanchez-Taylor",,2512,2512,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,6,01,LV115198-327BLUEBOY-30-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500362,0,2,10/6/2025 23:25,10/29/2025 23:35,11/22/2025 0:35,10/29/2025 23:35,VEND1000,"
+Sanchez-Taylor",,2512,2512,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,7,01,LV115198-327BLUEBOY-34-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500362,0,2,10/6/2025 23:25,10/29/2025 23:35,11/22/2025 0:35,10/29/2025 23:35,VEND1000,"
+Sanchez-Taylor",,2512,2512,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,8,01,LV115198-327BLUEBOY-34-34,Signore Jean,785,50,15.7,,8.09666E+11,,,,
+500362,0,2,10/6/2025 23:25,10/29/2025 23:35,11/22/2025 0:35,10/29/2025 23:35,VEND1000,"
+Sanchez-Taylor",,2512,2512,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,9,01,LV115198-327BLUEBOY-40-34,Signore Jean,78.5,5,15.7,,8.09666E+11,,,,
+500365,0,2,10/10/2025 16:54,10/29/2025 17:16,11/21/2025 18:17,10/29/2025 17:17,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS,1,01,FB3601937P-DARKRINSE-18-STD,High Rise Workwear Jeans,600,40,15,,8.09666E+11,,,,
+500365,0,2,10/10/2025 16:54,10/29/2025 17:16,11/21/2025 18:17,10/29/2025 17:17,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS,2,01,FB3601937P-DARKRINSE-20-STD,High Rise Workwear Jeans,450,30,15,,8.09666E+11,,,,
+500365,0,2,10/10/2025 16:54,10/29/2025 17:16,11/21/2025 18:17,10/29/2025 17:17,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS,3,01,FB3601937P-DARKRINSE-16-STD,High Rise Workwear Jeans,300,20,15,,8.09666E+11,,,,
+500365,0,2,10/10/2025 16:54,10/29/2025 17:16,11/21/2025 18:17,10/29/2025 17:17,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS,4,01,FB3601937P-DARKRINSE-22-STD,High Rise Workwear Jeans,225,15,15,,8.09666E+11,,,,
+500365,0,2,10/10/2025 16:54,10/29/2025 17:16,11/21/2025 18:17,10/29/2025 17:17,VEND1000,"
+Sanchez-Taylor",,1800,1800,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS,5,01,FB3601937P-DARKRINSE-14-STD,High Rise Workwear Jeans,225,15,15,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,1,01,LV115178-913RAINMAN-36-34,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,2,01,LV115178-913RAINMAN-36-30,Villager Jean,708,40,17.7,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,3,01,LV115178-913RAINMAN-32-30,Villager Jean,177,10,17.7,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,4,01,LV115178-913RAINMAN-38-34,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,5,01,LV115178-913RAINMAN-36-32,Villager Jean,885,50,17.7,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,6,01,LV115178-913RAINMAN-38-32,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,7,01,LV115178-913RAINMAN-40-32,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,8,01,LV115178-913RAINMAN-42-32,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,9,01,LV115178-913RAINMAN-40-30,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500366,0,2,10/10/2025 22:31,10/22/2025 22:41,11/14/2025 23:41,10/22/2025 22:41,VEND1000,"
+Sanchez-Taylor",,4425,4425,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025112-153 CTNS/20260128-75CTNS,10,01,LV115178-913RAINMAN-34-30,Villager Jean,177,10,17.7,,8.09666E+11,,,,
+500373,0,2,11/25/2025 1:20,1/21/2026 22:06,2/13/2026 22:06,1/21/2026 22:06,VEND1000,"
+Sanchez-Taylor",,2250,2250,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75 CTNS,1,01,SP14046DMB-1824REBARB-14-32,X-Boyfriend Heavy Hand Sand Whisker Detail Rolled,225,15,15,,8.09667E+11,,,,
+500373,0,2,11/25/2025 1:20,1/21/2026 22:06,2/13/2026 22:06,1/21/2026 22:06,VEND1000,"
+Sanchez-Taylor",,2250,2250,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75 CTNS,2,01,SP14046DMB-1824REBARB-20-32,X-Boyfriend Heavy Hand Sand Whisker Detail Rolled,600,40,15,,8.09667E+11,,,,
+500373,0,2,11/25/2025 1:20,1/21/2026 22:06,2/13/2026 22:06,1/21/2026 22:06,VEND1000,"
+Sanchez-Taylor",,2250,2250,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75 CTNS,3,01,SP14046DMB-1824REBARB-22-32,X-Boyfriend Heavy Hand Sand Whisker Detail Rolled,450,30,15,,8.09667E+11,,,,
+500373,0,2,11/25/2025 1:20,1/21/2026 22:06,2/13/2026 22:06,1/21/2026 22:06,VEND1000,"
+Sanchez-Taylor",,2250,2250,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75 CTNS,4,01,SP14046DMB-1824REBARB-16-32,X-Boyfriend Heavy Hand Sand Whisker Detail Rolled,375,25,15,,8.09667E+11,,,,
+500373,0,2,11/25/2025 1:20,1/21/2026 22:06,2/13/2026 22:06,1/21/2026 22:06,VEND1000,"
+Sanchez-Taylor",,2250,2250,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75 CTNS,5,01,SP14046DMB-1824REBARB-18-32,X-Boyfriend Heavy Hand Sand Whisker Detail Rolled,600,40,15,,8.09667E+11,,,,
+500374,0,2,11/25/2025 1:21,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,1,01,20015705P-1824WASH-18-STD,ROLL-UP HEM BOYFRIEND JEANS,384,30,12.8,,8.09666E+11,,,,
+500374,0,2,11/25/2025 1:21,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,2,01,20015705P-1824WASH-20-STD,ROLL-UP HEM BOYFRIEND JEANS,256,20,12.8,,8.09666E+11,,,,
+500374,0,2,11/25/2025 1:21,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,3,01,20015705P-1824WASH-16-STD,ROLL-UP HEM BOYFRIEND JEANS,512,40,12.8,,8.09666E+11,,,,
+500374,0,2,11/25/2025 1:21,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,4,01,20015705P-1824WASH-22-STD,ROLL-UP HEM BOYFRIEND JEANS,128,10,12.8,,8.09666E+11,,,,
+500374,0,2,11/25/2025 1:21,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1536,1536,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,5,01,20015705P-1824WASH-14-STD,ROLL-UP HEM BOYFRIEND JEANS,256,20,12.8,,8.09666E+11,,,,
+500375,0,2,11/25/2025 1:22,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,1,01,FA16556DMB-2942UNFORGV-18-34,"Kylie 24"" Flare Jean -- Dark Blue",388.2,30,12.94,,8.09666E+11,,,,
+500375,0,2,11/25/2025 1:22,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,2,01,FA16556DMB-2942UNFORGV-16-34,"Kylie 24"" Flare Jean -- Dark Blue",258.8,20,12.94,,8.09666E+11,,,,
+500375,0,2,11/25/2025 1:22,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,3,01,FA16556DMB-2942UNFORGV-14-34,"Kylie 24"" Flare Jean -- Dark Blue",388.2,30,12.94,,8.09666E+11,,,,
+500375,0,2,11/25/2025 1:22,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,4,01,FA16556DMB-2942UNFORGV-20-34,"Kylie 24"" Flare Jean -- Dark Blue",258.8,20,12.94,,8.09666E+11,,,,
+500375,0,2,11/25/2025 1:22,1/21/2026 22:05,2/13/2026 22:05,1/21/2026 22:05,VEND1000,"
+Sanchez-Taylor",,1552.8,1552.8,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,5,01,FA16556DMB-2942UNFORGV-22-34,"Kylie 24"" Flare Jean -- Dark Blue",258.8,20,12.94,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,1,01,LV251601-KHAKI-30-30,Men's Relaxed Straight Cargo Pocket Canvas Jeans,133,10,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,2,01,LV251601-KHAKI-32-30,Men's Relaxed Straight Cargo Pocket Canvas Jeans,199.5,15,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,3,01,LV251601-KHAKI-34-30,Men's Relaxed Straight Cargo Pocket Canvas Jeans,199.5,15,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,4,01,LV251601-KHAKI-36-30,Men's Relaxed Straight Cargo Pocket Canvas Jeans,199.5,15,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,5,01,LV251601-KHAKI-38-30,Men's Relaxed Straight Cargo Pocket Canvas Jeans,133,10,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,6,01,LV251601-KHAKI-40-30,Men's Relaxed Straight Cargo Pocket Canvas Jeans,133,10,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,7,01,LV251601-KHAKI-30-32,Men's Relaxed Straight Cargo Pocket Canvas Jeans,133,10,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,8,01,LV251601-KHAKI-32-32,Men's Relaxed Straight Cargo Pocket Canvas Jeans,266,20,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,9,01,LV251601-KHAKI-34-32,Men's Relaxed Straight Cargo Pocket Canvas Jeans,399,30,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,10,01,LV251601-KHAKI-36-32,Men's Relaxed Straight Cargo Pocket Canvas Jeans,199.5,15,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,11,01,LV251601-KHAKI-38-32,Men's Relaxed Straight Cargo Pocket Canvas Jeans,199.5,15,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,12,01,LV251601-KHAKI-40-32,Men's Relaxed Straight Cargo Pocket Canvas Jeans,133,10,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,13,01,LV251601-KHAKI-32-34,Men's Relaxed Straight Cargo Pocket Canvas Jeans,199.5,15,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,14,01,LV251601-KHAKI-34-34,Men's Relaxed Straight Cargo Pocket Canvas Jeans,266,20,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,15,01,LV251601-KHAKI-36-34,Men's Relaxed Straight Cargo Pocket Canvas Jeans,266,20,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,16,01,LV251601-KHAKI-38-34,Men's Relaxed Straight Cargo Pocket Canvas Jeans,133,10,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,17,01,LV251601-KHAKI-42-30,Men's Relaxed Straight Cargo Pocket Canvas Jeans,133,10,13.3,,8.09666E+11,,,,
+500376,0,2,11/26/2025 20:06,1/21/2026 22:04,2/13/2026 22:04,1/21/2026 22:04,VEND1000,"
+Sanchez-Taylor",,3458,3458,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-75CTNS,18,01,LV251601-KHAKI-42-32,Men's Relaxed Straight Cargo Pocket Canvas Jeans,133,10,13.3,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,1,01,LV115198-327BLUEBOY-36-32,Signore Jean,314,20,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,2,01,LV115198-327BLUEBOY-36-34,Signore Jean,392.5,25,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,3,01,LV115198-327BLUEBOY-40-32,Signore Jean,314,20,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,4,01,LV115198-327BLUEBOY-38-34,Signore Jean,314,20,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,5,01,LV115198-327BLUEBOY-30-32,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,6,01,LV115198-327BLUEBOY-30-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,7,01,LV115198-327BLUEBOY-32-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,8,01,LV115198-327BLUEBOY-36-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,9,01,LV115198-327BLUEBOY-38-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,10,01,LV115198-327BLUEBOY-34-30,Signore Jean,157,10,15.7,,8.09666E+11,,,,
+500387,0,2,12/17/2025 23:45,1/21/2026 23:46,2/13/2026 23:46,1/21/2026 23:46,VEND1000,"
+Sanchez-Taylor",,2355,2355,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,11,01,LV115198-327BLUEBOY-42-30,Signore Jean,78.5,5,15.7,,8.09666E+11,,,,
+500377,0,4,11/26/2025 22:36,1/21/2026 22:00,2/13/2026 22:01,1/21/2026 22:00,VEND1000,"
+Sanchez-Taylor",,2394,2394,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-? CTNS,1,01,LV255506-SANDSTONE-S-STD,Men's Cargo Pocket Woven Jogger Pants,399,30,13.3,,8.09666E+11,,,,
+500377,0,4,11/26/2025 22:36,1/21/2026 22:00,2/13/2026 22:01,1/21/2026 22:00,VEND1000,"
+Sanchez-Taylor",,2394,2394,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-? CTNS,2,01,LV255506-SANDSTONE-M-STD,Men's Cargo Pocket Woven Jogger Pants,665,50,13.3,,8.09666E+11,,,,
+500377,0,4,11/26/2025 22:36,1/21/2026 22:00,2/13/2026 22:01,1/21/2026 22:00,VEND1000,"
+Sanchez-Taylor",,2394,2394,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-? CTNS,3,01,LV255506-SANDSTONE-L-STD,Men's Cargo Pocket Woven Jogger Pants,532,40,13.3,,8.09666E+11,,,,
+500377,0,4,11/26/2025 22:36,1/21/2026 22:00,2/13/2026 22:01,1/21/2026 22:00,VEND1000,"
+Sanchez-Taylor",,2394,2394,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-? CTNS,4,01,LV255506-SANDSTONE-XL-STD,Men's Cargo Pocket Woven Jogger Pants,399,30,13.3,,8.09666E+11,,,,
+500377,0,4,11/26/2025 22:36,1/21/2026 22:00,2/13/2026 22:01,1/21/2026 22:00,VEND1000,"
+Sanchez-Taylor",,2394,2394,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,,20260128-? CTNS,5,01,LV255506-SANDSTONE-2XL-STD,Men's Cargo Pocket Woven Jogger Pants,399,30,13.3,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,1,01,LV115178-913RAINMAN-38-32,Villager Jean,1062,60,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,2,01,LV115178-913RAINMAN-34-30,Villager Jean,1239,70,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,3,01,LV115178-913RAINMAN-36-30,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,4,01,LV115178-913RAINMAN-32-34,Villager Jean,708,40,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,5,01,LV115178-913RAINMAN-32-30,Villager Jean,796.5,45,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,6,01,LV115178-913RAINMAN-40-32,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,7,01,LV115178-913RAINMAN-38-34,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,8,01,LV115178-913RAINMAN-38-30,Villager Jean,442.5,25,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,9,01,LV115178-913RAINMAN-40-30,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,10,01,LV115178-913RAINMAN-30-32,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,11,01,LV115178-913RAINMAN-42-30,Villager Jean,531,30,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,12,01,LV115178-913RAINMAN-42-32,Villager Jean,265.5,15,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,13,01,LV115178-913RAINMAN-30-30,Villager Jean,708,40,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,14,01,LV115178-913RAINMAN-32-32,Villager Jean,354,20,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,15,01,LV115178-913RAINMAN-34-32,Villager Jean,177,10,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,16,01,LV115178-913RAINMAN-36-32,Villager Jean,177,10,17.7,,8.09666E+11,,,,
+500382,0,4,12/16/2025 0:34,1/21/2026 23:29,2/13/2026 23:29,1/21/2026 23:29,VEND1000,"
+Sanchez-Taylor",,8938.5,8938.5,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20260128-75CTNS,17,01,LV115178-913RAINMAN-36-34,Villager Jean,177,10,17.7,,8.09666E+11,,,,

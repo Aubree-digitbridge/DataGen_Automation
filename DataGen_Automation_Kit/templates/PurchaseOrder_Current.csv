@@ -1,0 +1,81 @@
+PoNum,PoType,PoStatus,PoDate,EtaShipDate,EtaArrivalDate,CancelDate,VendorCode,VendorName,Currency,SubTotalAmount,TotalAmount,TaxRate,TaxAmount,TaxableAmount,NonTaxableAmount,ShippingCarrier,ShippingClass,ChannelNum,ChannelAccountNum,ChannelOrderID,SecondaryChannelOrderID,ShippingAccount,RefNum,CustomerPoNum,CustomerCode,CustomerName,OrderNumber,InvoiceNumber,ShipToName,ShipToCompany,ShipToAddressLine1,ShipToAddressLine2,ShipToCity,ShipToState,ShipToPostalCode,ShipToCounty,ShipToCountry,ShipToEmail,ShipToDaytimePhone,BillToName,BillToCompany,BillToAttention,BillToAddressLine1,BillToAddressLine2,BillToCity,BillToState,BillToStateFullName,BillToPostalCode,BillToPostalCodeExt,BillToCounty,BillToCountry,BillToEmail,BillToDaytimePhone,BillToNightPhone,Notes,Container,Seq,WarehouseCode,SKU,Description,ItemTotalAmount,PoQty,Price,ItemNotes,UPC,EAN,MPN,ExternalBarcode,VendorSku
+500403,0,0,1/29/2026 0:21,3/25/2026 23:27,4/17/2026 23:27,3/25/2026 23:27,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原FB3610680P-3222DKBLUE改洗水，去掉破洞，去掉裤脚不同颜色，只保留1/2寸毛边且必须在3/4处车一条安全线。,,1,01,FB3602079P-BLUEFRAYED-14-STD,High-Rise Cropped Wide Leg Jeans Released Hem,552,40,13.8,,8.09666E+11,,,,
+500403,0,0,1/29/2026 0:21,3/25/2026 23:27,4/17/2026 23:27,3/25/2026 23:27,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原FB3610680P-3222DKBLUE改洗水，去掉破洞，去掉裤脚不同颜色，只保留1/2寸毛边且必须在3/4处车一条安全线。,,2,01,FB3602079P-BLUEFRAYED-16-STD,High-Rise Cropped Wide Leg Jeans Released Hem,897,65,13.8,,8.09666E+11,,,,
+500403,0,0,1/29/2026 0:21,3/25/2026 23:27,4/17/2026 23:27,3/25/2026 23:27,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原FB3610680P-3222DKBLUE改洗水，去掉破洞，去掉裤脚不同颜色，只保留1/2寸毛边且必须在3/4处车一条安全线。,,3,01,FB3602079P-BLUEFRAYED-18-STD,High-Rise Cropped Wide Leg Jeans Released Hem,897,65,13.8,,8.09666E+11,,,,
+500403,0,0,1/29/2026 0:21,3/25/2026 23:27,4/17/2026 23:27,3/25/2026 23:27,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原FB3610680P-3222DKBLUE改洗水，去掉破洞，去掉裤脚不同颜色，只保留1/2寸毛边且必须在3/4处车一条安全线。,,4,01,FB3602079P-BLUEFRAYED-20-STD,High-Rise Cropped Wide Leg Jeans Released Hem,552,40,13.8,,8.09666E+11,,,,
+500403,0,0,1/29/2026 0:21,3/25/2026 23:27,4/17/2026 23:27,3/25/2026 23:27,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原FB3610680P-3222DKBLUE改洗水，去掉破洞，去掉裤脚不同颜色，只保留1/2寸毛边且必须在3/4处车一条安全线。,,5,01,FB3602079P-BLUEFRAYED-22-STD,High-Rise Cropped Wide Leg Jeans Released Hem,414,30,13.8,,8.09666E+11,,,,
+500404,0,0,1/29/2026 0:43,3/25/2026 23:44,3/30/2026 6:43,3/25/2026 23:44,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原PJ-FA13537DMB-1791SHRDIL，只是改为SP，且款号改为FB3602078P，出货裤脚要卷两下，大约2寸高。,,1,01,FB3602078P-1791SHRDIL-14-STD,Basic Boyfriend Jean In Boyfriend Fit,552,40,13.8,,8.09666E+11,,,,
+500404,0,0,1/29/2026 0:43,3/25/2026 23:44,3/30/2026 6:43,3/25/2026 23:44,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原PJ-FA13537DMB-1791SHRDIL，只是改为SP，且款号改为FB3602078P，出货裤脚要卷两下，大约2寸高。,,2,01,FB3602078P-1791SHRDIL-16-STD,Basic Boyfriend Jean In Boyfriend Fit,897,65,13.8,,8.09666E+11,,,,
+500404,0,0,1/29/2026 0:43,3/25/2026 23:44,3/30/2026 6:43,3/25/2026 23:44,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原PJ-FA13537DMB-1791SHRDIL，只是改为SP，且款号改为FB3602078P，出货裤脚要卷两下，大约2寸高。,,3,01,FB3602078P-1791SHRDIL-18-STD,Basic Boyfriend Jean In Boyfriend Fit,897,65,13.8,,8.09666E+11,,,,
+500404,0,0,1/29/2026 0:43,3/25/2026 23:44,3/30/2026 6:43,3/25/2026 23:44,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原PJ-FA13537DMB-1791SHRDIL，只是改为SP，且款号改为FB3602078P，出货裤脚要卷两下，大约2寸高。,,4,01,FB3602078P-1791SHRDIL-20-STD,Basic Boyfriend Jean In Boyfriend Fit,552,40,13.8,,8.09666E+11,,,,
+500404,0,0,1/29/2026 0:43,3/25/2026 23:44,3/30/2026 6:43,3/25/2026 23:44,VEND1000,"
+Sanchez-Taylor",,3312,3312,0,0,0,0,,,0,0,,,,,,,,,,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",1434 Santa Anita Ave,,South El Monte,CA,91733,,United States,jimmy.xu@vibesbase.com,6263383838,"Vibes Base Enterprises, Inc.","Vibes Base Enterprises, Inc.",Petersen Zhu,1434 Santa Anita Ave,,South El Monte,California,United States,91733,91733,Los Angeles,USA,jimmy.xu@vibesbase.com,626-338-3838,626-338-3838,原PJ-FA13537DMB-1791SHRDIL，只是改为SP，且款号改为FB3602078P，出货裤脚要卷两下，大约2寸高。,,5,01,FB3602078P-1791SHRDIL-22-STD,Basic Boyfriend Jean In Boyfriend Fit,414,30,13.8,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,1,01,LV115198-327BLUEBOY-34-32,Signore Jean-Relaxed Bootcut,471,30,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,2,01,LV115198-327BLUEBOY-36-32,Signore Jean-Relaxed Bootcut,942,60,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,3,01,LV115198-327BLUEBOY-38-32,Signore Jean-Relaxed Bootcut,471,30,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,4,01,LV115198-327BLUEBOY-38-34,Signore Jean-Relaxed Bootcut,628,40,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,5,01,LV115198-327BLUEBOY-32-32,Signore Jean-Relaxed Bootcut,314,20,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,6,01,LV115198-327BLUEBOY-36-34,Signore Jean-Relaxed Bootcut,471,30,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,7,01,LV115198-327BLUEBOY-40-32,Signore Jean-Relaxed Bootcut,628,40,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,8,01,LV115198-327BLUEBOY-32-34,Signore Jean-Relaxed Bootcut,628,40,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,9,01,LV115198-327BLUEBOY-30-30,Signore Jean-Relaxed Bootcut,628,40,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,10,01,LV115198-327BLUEBOY-42-32,Signore Jean-Relaxed Bootcut,314,20,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,11,01,LV115198-327BLUEBOY-30-32,Signore Jean-Relaxed Bootcut,314,20,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,12,01,LV115198-327BLUEBOY-32-30,Signore Jean-Relaxed Bootcut,471,30,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,13,01,LV115198-327BLUEBOY-34-30,Signore Jean-Relaxed Bootcut,471,30,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,14,01,LV115198-327BLUEBOY-42-30,Signore Jean-Relaxed Bootcut,314,20,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,15,01,LV115198-327BLUEBOY-38-30,Signore Jean-Relaxed Bootcut,314,20,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,16,01,LV115198-327BLUEBOY-40-30,Signore Jean-Relaxed Bootcut,157,10,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,17,01,LV115198-327BLUEBOY-36-30,Signore Jean-Relaxed Bootcut,157,10,15.7,,8.09666E+11,,,,
+500389,0,1,1/7/2026 20:14,1/28/2026 20:17,2/20/2026 20:16,1/28/2026 20:17,VEND1000,"
+Sanchez-Taylor",,7850,7850,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,500387返单,,18,01,LV115198-327BLUEBOY-40-34,Signore Jean-Relaxed Bootcut,157,10,15.7,,8.09666E+11,,,,
+500399,0,1,1/16/2026 18:21,2/11/2026 18:28,3/6/2026 18:28,2/11/2026 18:28,VEND1000,"
+Sanchez-Taylor",,1941,1941,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PO#500345返单，请保证大货质量。,,1,01,FA16556DMB-2886WASH-18-34,"Kylie 24"" Flare Jean -- Dark Blue",388.2,30,12.94,,8.09666E+11,,,,
+500399,0,1,1/16/2026 18:21,2/11/2026 18:28,3/6/2026 18:28,2/11/2026 18:28,VEND1000,"
+Sanchez-Taylor",,1941,1941,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PO#500345返单，请保证大货质量。,,2,01,FA16556DMB-2886WASH-16-34,"Kylie 24"" Flare Jean -- Dark Blue",517.6,40,12.94,,8.09666E+11,,,,
+500399,0,1,1/16/2026 18:21,2/11/2026 18:28,3/6/2026 18:28,2/11/2026 18:28,VEND1000,"
+Sanchez-Taylor",,1941,1941,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PO#500345返单，请保证大货质量。,,3,01,FA16556DMB-2886WASH-20-34,"Kylie 24"" Flare Jean -- Dark Blue",517.6,40,12.94,,8.09666E+11,,,,
+500399,0,1,1/16/2026 18:21,2/11/2026 18:28,3/6/2026 18:28,2/11/2026 18:28,VEND1000,"
+Sanchez-Taylor",,1941,1941,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PO#500345返单，请保证大货质量。,,4,01,FA16556DMB-2886WASH-14-34,"Kylie 24"" Flare Jean -- Dark Blue",258.8,20,12.94,,8.09666E+11,,,,
+500399,0,1,1/16/2026 18:21,2/11/2026 18:28,3/6/2026 18:28,2/11/2026 18:28,VEND1000,"
+Sanchez-Taylor",,1941,1941,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,PO#500345返单，请保证大货质量。,,5,01,FA16556DMB-2886WASH-22-34,"Kylie 24"" Flare Jean -- Dark Blue",258.8,20,12.94,,8.09666E+11,,,,
+500402,0,1,1/27/2026 0:42,3/25/2026 22:07,4/17/2026 22:07,3/25/2026 22:07,VEND1000,"
+Sanchez-Taylor",,1300,1300,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"500108返单, 价格从12.90提到13。出货裤脚要卷两下，大约2寸高。",,1,01,FA13537DM-1791SHRDIL-29-32,"Basic Boyfriend Jean in boyfriend Fit (32"" Inseam)",260,20,13,,8.09667E+11,,,,
+500402,0,1,1/27/2026 0:42,3/25/2026 22:07,4/17/2026 22:07,3/25/2026 22:07,VEND1000,"
+Sanchez-Taylor",,1300,1300,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"500108返单, 价格从12.90提到13。出货裤脚要卷两下，大约2寸高。",,2,01,FA13537DM-1791SHRDIL-30-32,"Basic Boyfriend Jean in boyfriend Fit (32"" Inseam)",390,30,13,,8.09667E+11,,,,
+500402,0,1,1/27/2026 0:42,3/25/2026 22:07,4/17/2026 22:07,3/25/2026 22:07,VEND1000,"
+Sanchez-Taylor",,1300,1300,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"500108返单, 价格从12.90提到13。出货裤脚要卷两下，大约2寸高。",,3,01,FA13537DM-1791SHRDIL-31-32,"Basic Boyfriend Jean in boyfriend Fit (32"" Inseam)",260,20,13,,8.09667E+11,,,,
+500402,0,1,1/27/2026 0:42,3/25/2026 22:07,4/17/2026 22:07,3/25/2026 22:07,VEND1000,"
+Sanchez-Taylor",,1300,1300,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"500108返单, 价格从12.90提到13。出货裤脚要卷两下，大约2寸高。",,4,01,FA13537DM-1791SHRDIL-26-32,"Basic Boyfriend Jean in boyfriend Fit (32"" Inseam)",65,5,13,,8.09667E+11,,,,
+500402,0,1,1/27/2026 0:42,3/25/2026 22:07,4/17/2026 22:07,3/25/2026 22:07,VEND1000,"
+Sanchez-Taylor",,1300,1300,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"500108返单, 价格从12.90提到13。出货裤脚要卷两下，大约2寸高。",,5,01,FA13537DM-1791SHRDIL-27-32,"Basic Boyfriend Jean in boyfriend Fit (32"" Inseam)",65,5,13,,8.09667E+11,,,,
+500402,0,1,1/27/2026 0:42,3/25/2026 22:07,4/17/2026 22:07,3/25/2026 22:07,VEND1000,"
+Sanchez-Taylor",,1300,1300,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"500108返单, 价格从12.90提到13。出货裤脚要卷两下，大约2寸高。",,6,01,FA13537DM-1791SHRDIL-28-32,"Basic Boyfriend Jean in boyfriend Fit (32"" Inseam)",130,10,13,,8.09667E+11,,,,
+500402,0,1,1/27/2026 0:42,3/25/2026 22:07,4/17/2026 22:07,3/25/2026 22:07,VEND1000,"
+Sanchez-Taylor",,1300,1300,0,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"500108返单, 价格从12.90提到13。出货裤脚要卷两下，大约2寸高。",,7,01,FA13537DM-1791SHRDIL-32-32,"Basic Boyfriend Jean in boyfriend Fit (32"" Inseam)",130,10,13,,8.09667E+11,,,,

@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Generate Prompts",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/main.py",
+      "args": [
+        "generate-prompts"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Validate Output",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/main.py",
+      "args": [
+        "validate"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

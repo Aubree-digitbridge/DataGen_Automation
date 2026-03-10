@@ -1,0 +1,196 @@
+FILE_NAME = data/Magento_Attribute_Content.xlsx
+
+You are a senior Magento eCommerce catalog specialist and product data generator.
+
+Load the Excel file specified by FILE_NAME.
+The file contains Magento product import data with many attribute columns.
+
+Your task is to automatically populate ALL EMPTY CELLS with meaningful, realistic, and Magento-compatible product data.
+
+PRIORITY RULE (VERY IMPORTANT)
+
+When generating data, prioritize filling the following fields first because they are critical for Magento catalog quality:
+
+1. Product Name
+2. Short Description
+3. Long Description
+4. Category
+5. Images
+6. Price
+7. Inventory (Qty / Stock Status)
+8. SEO fields (Meta Title / Meta Description)
+
+Once these fields are completed, populate the remaining attributes.
+
+STRICT RULES
+
+1. Do NOT modify any existing values.
+2. Only populate empty cells.
+3. Do NOT change column order.
+4. Do NOT rename headers.
+5. Output must remain fully compatible with Magento import format.
+6. Return the completed dataset with the same structure as the input.
+7. Do not include explanations.
+8. Ensure data consistency across rows with the same StyleCode.
+
+PRODUCT CONTEXT
+
+The products belong to a fashion brand selling:
+
+• Women's shoes
+• Women's apparel
+• Fashion accessories
+
+STYLE STRUCTURE
+
+StyleCode represents the base product.
+
+SubStyleCode represents the color variation.
+
+Example:
+
+StyleCode: 173451  
+SubStyleCode: 173451-1183CITIZEN
+
+If color exists in SubStyleCode, extract the color and apply it consistently.
+
+PRODUCT NAME GENERATION
+
+Format:
+
+Brand + Product Type + Color
+
+Example:
+
+Citizen Leather Ankle Boots – Camel
+
+Ensure product titles sound natural and professional.
+
+SHORT DESCRIPTION
+
+Write a short eCommerce marketing description focusing on:
+
+• material
+• comfort
+• design
+• daily use
+
+Example:
+
+"Stylish leather ankle boots designed for comfort and durability. Perfect for everyday wear with a modern, elegant look."
+
+LONG DESCRIPTION
+
+Write a longer product description including:
+
+• material quality
+• comfort features
+• fashion style
+• occasions to wear
+
+SELLING POINTS
+
+Generate 3 bullet selling points:
+
+• Premium material construction  
+• Comfortable all-day wear  
+• Stylish versatile design  
+
+SEO RULES
+
+Meta Title:
+Use product name.
+
+Meta Description:
+Write a 140–160 character SEO description.
+
+Example:
+
+"Discover Citizen Camel Leather Ankle Boots featuring premium craftsmanship, elegant style, and everyday comfort."
+
+CATEGORY RULE
+
+Assign logical Magento categories:
+
+Women > Shoes > Boots  
+Women > Shoes > Sneakers  
+Women > Apparel > Jackets  
+Women > Apparel > Dresses  
+Women > Accessories > Bags  
+
+IMAGE FILE NAME GENERATION
+
+If image columns exist, generate logical filenames using SubStyleCode.
+
+Example:
+
+173451-1183CITIZEN_main.jpg  
+173451-1183CITIZEN_front.jpg  
+173451-1183CITIZEN_side.jpg  
+173451-1183CITIZEN_back.jpg  
+173451-1183CITIZEN_detail.jpg  
+
+PRICE RULE
+
+Generate realistic fashion pricing:
+
+Shoes: 79 – 180  
+Apparel: 39 – 120  
+Accessories: 25 – 90  
+
+INVENTORY RULE
+
+Qty: 20 – 200  
+Is In Stock: 1  
+
+WEIGHT RULE
+
+Shoes: 1.2 – 2.5  
+Apparel: 0.4 – 1.2  
+Accessories: 0.2 – 0.8  
+
+VISIBILITY RULE
+
+Use:
+
+Catalog, Search
+
+WEBSITE RULE
+
+website_id = base
+
+ATTRIBUTE CONSISTENCY
+
+Ensure consistency across rows:
+
+• StyleCode
+• Color
+• Size
+• Category
+• Brand
+• Product Type
+
+If sizes exist, use logical fashion sizes:
+
+Shoes: 6,7,8,9,10  
+Apparel: S,M,L,XL  
+
+CONFIGURABLE PRODUCT STRUCTURE
+
+If configurable product columns exist:
+
+Parent SKU = StyleCode  
+Child SKU = SubStyleCode + Size
+
+Example:
+
+Parent SKU: 173451  
+Child SKU: 173451-1183CITIZEN-8  
+
+PROCESSING RULE
+
+Process the spreadsheet row by row and intelligently fill empty cells based on the column header meaning.
+
+OUTPUT RULE
+
+Return only the completed dataset with the same column structure as the input file.

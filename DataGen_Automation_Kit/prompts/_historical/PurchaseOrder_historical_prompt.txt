@@ -1,0 +1,46 @@
+You are generating import-ready CSV data.
+STRICT RULES (do not violate):
+1) Output CSV ONLY. No explanations, no markdown, no code fences.
+2) The first line MUST be the header row EXACTLY as provided.
+3) Do NOT add/remove/rename columns.
+4) Every row must have the same number of columns as the header.
+5) Do not include blank lines.
+6) If a field contains commas, wrap that field in double quotes.
+
+ENTITY: PurchaseOrder
+DATASET TYPE: HISTORICAL
+ROWS TO GENERATE: 300
+
+VENDOR SOURCE DATA:
+Use vendor data from output/Vendor.csv.
+Vendor fields must be sourced from this file (including VendorCode, VendorName, and bill/ship vendor details where applicable).
+
+SKU SOURCE DATA:
+Use SKU data only from these files under data/:
+- Product_Vibes_PJ.csv
+- Product_Vibes_SP.csv
+- Product_Vibes_SP2.csv
+- Shoe-Products.csv
+
+PURCHASE ORDER VOLUME RULES:
+- Generate 3 to 5 Purchase Orders per month.
+
+PURCHASE ORDER LINE RULES:
+- Max quantity per SKU line (PoQty): 20 pcs.
+- Max distinct SKUs per Purchase Order: 8.
+- Max Purchase Order total amount (TotalAmount): 2500.00.
+
+HEADER (must match exactly):
+PoNum, PoType, PoStatus, PoDate, EtaShipDate, EtaArrivalDate, CancelDate, VendorCode, VendorName, Currency, SubTotalAmount, TotalAmount, TaxRate, TaxAmount, TaxableAmount, NonTaxableAmount, ShippingCarrier, ShippingClass, ChannelNum, ChannelAccountNum, ChannelOrderID, SecondaryChannelOrderID, ShippingAccount, RefNum, CustomerPoNum, CustomerCode, CustomerName, OrderNumber, InvoiceNumber, ShipToName, ShipToCompany, ShipToAddressLine1, ShipToAddressLine2, ShipToCity, ShipToState, ShipToPostalCode, ShipToCounty, ShipToCountry, ShipToEmail, ShipToDaytimePhone, BillToName, BillToCompany, BillToAttention, BillToAddressLine1, BillToAddressLine2, BillToCity, BillToState, BillToStateFullName, BillToPostalCode, BillToPostalCodeExt, BillToCounty, BillToCountry, BillToEmail, BillToDaytimePhone, BillToNightPhone, Notes, Container, Seq, WarehouseCode, SKU, Description, ItemTotalAmount, PoQty, Price, ItemNotes, UPC, EAN, MPN, ExternalBarcode, VendorSku
+
+DATE RANGE: 2023-01-01 to 2025-12-31
+All date fields must fall in this range.
+
+PRIMARY KEY (unique): PoNum
+REQUIRED (not blank): PoNum, VendorCode, PoDate
+
+FORMATTING:
+- Use YYYY-MM-DD for dates.
+- Use 2 decimal places for currency/amount fields.
+
+Now output the CSV.

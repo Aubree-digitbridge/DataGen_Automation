@@ -1,0 +1,14 @@
+﻿Channel Num,Channel Name,Channel Account Num,Channel Account Name,Customer Code,Currency,Sales Order Type
+10001,Amazon,10565,AMZ-eCom,AMZ-eCom,USD,1
+10016,Amazon (By Veeqo),10579,Veeqo-Amazon,Veeqo-Amazon,USD,1
+10004,eBay,10570,eBay,eBay,USD,1
+10008,Etsy,10571,Etsy-LS,Etsy-LS,USD,1
+10008,Etsy,10572,Etsy-VS,Etsy-VS,USD,1
+10005,Hudson's Bay Marketplace (By Mirakl),10577,Mirakl-HudsonsB,Mirakl-HudsonsB,USD,1
+30007,JC Penney (By CommerceHub),10575,JCPenney,JCPenney,USD,1
+10013,Kohl's (By Mirakl),10576,Mirakl-Kohls,Mirakl-Kohls,USD,1
+30005,Macy's (By CommerceHub),10574,Macys,Macys,USD,1
+20003,Magento 2.x,10581,Magento,Magento,USD,1
+20001,Shopify,10580,Shopify,Shopify,USD,1
+20006,Squarespace,10582,Squarespace,Squarespace,USD,1
+10002,Walmart,10566,Walmart-eComm,Walmart-eComm,USD,1

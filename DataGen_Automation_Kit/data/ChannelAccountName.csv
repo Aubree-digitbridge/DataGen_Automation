@@ -1,0 +1,21 @@
+﻿channelNum,channelName,channelAccountNum,channelAccountName,customerCode
+10001,Amazon,10565,AMZ-eCom,AMZ-eCom
+10016,Amazon(By Veeqo),10579,Veeqo-Amazon,Veeqo-Amazon
+30027,Bloomingdale's (By NuOrder),10578,Bloomingdales,Bloomingdales
+10004,eBay,10570,eBay,eBay
+10008,Etsy,10571,Etsy-LS,Etsy-LS
+10008,Etsy,10572,Etsy-VS,Etsy-VS
+10009,Facebook,10573,Facebook,Facebook
+60005,Fair(File),10584,Faire,Faire
+10003,Google Shopping,10569,Google-AL,Google-AL
+10003,Google Shopping,10568,Google-LB,Google-LB
+10003,Google Shopping,10567,Google-MA,Google-MA
+10005,Hudson's Bay Marketplace (By Mirakl),10577,Mirakl-HudsonsB,Mirakl-HudsonsB
+30007,JC Penney (By CommerceHub),10575,JCPenney,JCPenney
+10013,Kohl's (By Mirakl),10576,Mirakl-Kohls,Mirakl-Kohls
+30005,Macy's (By CommerceHub),10574,Macys,Macys
+20003,Magento 2.x,10581,Magento,Magento
+20001,Shopify,10580,Shopify,Shopify
+20006,Squarespace,10582,Squarespace,Squarespace
+60013,Tiktok (File),10583,Tiktok,Tiktok
+10002,Walmart,10566,Walmart-eComm,Walmart-eComm

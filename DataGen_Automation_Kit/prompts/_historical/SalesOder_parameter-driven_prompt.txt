@@ -1,0 +1,231 @@
+You are generating import-ready CSV data.
+
+STRICT RULES (do not violate):
+
+Output CSV ONLY. No explanations, no markdown, no code fences.
+
+The first line MUST be the header row EXACTLY as provided.
+
+Do NOT add/remove/rename columns.
+
+Every row must have the same number of columns as the header.
+
+Do not include blank lines.
+
+If a field contains commas, wrap that field in double quotes.
+
+ENTITY: SalesOrder
+DATASET TYPE: HISTORICAL (eCommerce realistic behavior)
+
+================================================
+USER PARAMETERS (OBEY STRICTLY)
+
+A) DATE RANGE
+StartDate = 2026-01-01
+EndDate = 2026-02-28
+
+B) ORDER VOLUME
+OrdersToGenerate = 450
+
+C) LINE QUANTITY LIMITS
+MinOrderQtyPerLine = 1
+MaxOrderQtyPerLine = 4
+
+D) STYLE LIMITS (distinct SKUs per order)
+MinStylesPerOrder = 1
+MaxStylesPerOrder = 3
+
+E) ORDER TOTAL LIMITS
+MinOrderTotalAmount = 45
+MaxOrderTotalAmount = 450
+
+F) ECOMMERCE BEHAVIOR CONTROLS
+%OrdersWithDiscount = 35
+DiscountRateOptions = 0
+
+%OrdersWithTax = 0
+TaxRateOptions = 0
+
+%OrdersWithShippingCharge = 90
+ShippingAmountRange = 0.00 to 18.00
+
+%OrdersPaid = 5-12
+
+================================================
+SOURCE FILE RULES (MANDATORY)
+
+Customers source: Customer.csv
+
+Customer-channel mapping source: data\Customer-Channel-ChannelAccountMapping.csv
+
+Use ONLY CustomerCode + CustomerName from this file
+
+CustomerCode and CustomerName must match exactly from the same row
+
+Populate ChannelNum and ChannelAccountNum using CustomerCode lookup from mapping file:
+CustomerCode -> ChannelNum, ChannelAccountNum
+
+For each order, ChannelNum and ChannelAccountNum must come from the same matched mapping row.
+
+Also populate ShipTo fields from the same customer row:
+ShipToName, ShipToFirstName, ShipToLastName, ShipToCompany,
+ShipToAddressLine1, ShipToAddressLine2, ShipToAddressLine3,
+ShipToCity, ShipToState, ShipToPostalCode, ShipToCounty,
+ShipToCountry, ShipToEmail, ShipToDaytimePhone
+
+Use exact Customer.csv ship columns as source mapping:
+ShipName -> ShipToName
+Contact -> ShipToFirstName
+Contact2 -> ShipToLastName
+ShipCompany -> ShipToCompany
+ShipAddressLine1 -> ShipToAddressLine1
+ShipAddressLine2 -> ShipToAddressLine2
+ShipDescription -> ShipToAddressLine3
+ShipCity -> ShipToCity
+ShipState -> ShipToState
+ShipPostalCode -> ShipToPostalCode
+ShipCounty -> ShipToCounty
+ShipCountry -> ShipToCountry
+ShipEmail -> ShipToEmail
+ShipDaytimePhone -> ShipToDaytimePhone
+
+Distribute orders evenly across customers (difference <= 1)
+
+Products sources (combine ALL into one SKU pool):
+
+Shoe-Products.csv
+
+Product_Vibes_PJ.csv
+
+Product_Vibes_SP.csv
+
+Product_Vibes_SP2.csv
+
+For each line item:
+
+SKU must come from combined product pool
+
+Do NOT repeat the same SKU within the same order
+
+Spread SKU usage evenly across the dataset
+
+================================================
+ORDER GENERATION LOGIC
+
+PRIMARY KEY:
+
+OrderNumber unique per ORDER (not per row)
+
+Format: SO{YEAR}-000001
+(Year must be derived from StartDate)
+
+ChannelOrderID is REQUIRED per order (must not be blank)
+
+ChannelOrderID must not repeat across different orders
+
+For multi-line orders, use the same ChannelOrderID across all line rows of that order
+
+Format: {ChannelNum}-{YEAR}-000001
+(ChannelNum must come from mapped ChannelNum for that order; Year must be derived from StartDate)
+
+DATE RULES:
+
+OrderDate within StartDate and EndDate
+
+ItemDate = OrderDate
+
+BillDate = OrderDate or OrderDate + 0..2 days
+
+ShipDate = OrderDate + 0..5 days (REQUIRED, must not be blank)
+
+DueDate = OrderDate + TermsDays (or +30 default)
+
+All dates must remain inside the date range
+
+================================================
+ORDER STRUCTURE RULES
+
+For each order:
+
+Choose number of styles:
+NumStyles = random integer between MinStylesPerOrder and MaxStylesPerOrder
+
+For each style:
+
+Choose SKU (distinct per order)
+
+OrderQty = random integer between MinOrderQtyPerLine and MaxOrderQtyPerLine
+
+Price = numeric 2 decimals
+
+ExtAmount = OrderQty * Price
+
+Apply ecommerce logic:
+
+Some orders have discount (based on %OrdersWithDiscount)
+
+No orders have tax (TaxRate must always be 0)
+
+Some orders have shipping charge (based on %OrdersWithShippingCharge)
+
+Calculate totals correctly:
+SubTotalAmount = sum(line ExtAmount) - DiscountAmount
+TaxAmount = TaxableAmount * (TaxRate / 100)
+TotalAmount = SubTotalAmount + TaxAmount + ShippingAmount
+
+HARD CONSTRAINT:
+MinOrderTotalAmount <= TotalAmount <= MaxOrderTotalAmount
+
+If below minimum:
+increase quantity or add another style (within limits)
+
+If above maximum:
+reduce quantity or reduce styles until within range
+
+================================================
+PAYMENT LOGIC (ECOMMERCE REALISM)
+
+PaidAmount = TotalAmount
+Balance = 0.00
+Financial Status = Paid
+
+OrderStatus:
+Always 4
+
+Fulfillment Status:
+Always Shipped
+
+================================================
+DEFAULT SAFE VALUES
+
+OrderType = 1
+OrderStatus = 4
+Currency = USD
+UOM = EA
+Stockable = Y
+Costable = Y
+IsProfit = Y
+Taxable = N
+ShipQty = 0
+OpenQty = OrderQty
+
+================================================
+FINAL OUTPUT REQUIREMENTS
+
+Generate exactly OrdersToGenerate orders
+
+Multiple rows per order if NumStyles > 1
+
+Obey min/max qty
+
+Obey min/max styles
+
+Obey min/max order total
+
+Evenly distribute customers
+
+Spread SKU usage widely
+
+Output CSV only
+
+Now output the CSV.

@@ -1,0 +1,61 @@
+OUTPUT SETTINGS
+OutputFolder: output
+OutputFileName: Invoice_Historical_YYYYMMDD.csv
+
+SALES ORDER SOURCE
+SalesOrderSourceFolder: output
+SalesOrderSourceFileName: SalesOrder_Historical_generated_2026.csv
+
+TEMPLATE SOURCE
+Use templates/Invoice_Historical.xlsx as the template.
+The output header must match this template exactly.
+
+You are generating import-ready CSV data.
+STRICT RULES (do not violate):
+1) Output CSV ONLY. No explanations, no markdown, no code fences.
+2) The first line MUST be the header row EXACTLY as provided.
+3) Do NOT add/remove/rename columns.
+4) Every row must have the same number of columns as the header.
+5) Do not include blank lines.
+6) If a field contains commas, wrap that field in double quotes.
+
+ENTITY: Invoice
+DATASET TYPE: HISTORICAL
+ROWS TO GENERATE: 800
+
+SOURCE RULE:
+Generate invoice data by using the Sales Order data from SalesOrderSourceFolder/SalesOrderSourceFileName.
+Use Sales Order values as the source for related invoice fields (for example: OrderNumber, CustomerCode, CustomerName, dates, amounts, Channel fields, and ship/bill address fields).
+
+HEADER RULE:
+The first line must be the header row from templates/Invoice_Historical.xlsx, exactly as-is.
+
+DATE RANGE: 2023-01-01 to 2025-12-31
+All date fields must fall in this range.
+
+PRIMARY KEY (unique): InvoiceNumber
+REQUIRED (not blank): InvoiceNumber, CustomerCode, InvoiceDate
+
+FORMATTING:
+- Use YYYY-MM-DD for dates.
+- Use 2 decimal places for currency/amount fields.
+
+QUANTITY RULE:
+ShipQty must always be the same value as OrderQty.
+OpenQty must always be 0.
+
+INVOICE GROUPING RULE:
+For each OrderNumber, use only one InvoiceNumber.
+All lines of the same OrderNumber must share the same InvoiceNumber.
+
+FIELD DEFAULT RULES:
+CancelledQty must always be 0.
+OrderAmount must always be 0.
+CancelledAmount must always be 0.
+OpenAmount must always be 0.
+Stockable must always be FALSE.
+Costable must always be FALSE.
+IsProfit must always be FALSE.
+Taxable must always be TRUE.
+
+Now output the CSV.

@@ -1,0 +1,61 @@
+You are generating System Parameters Settings data for an ERP system.
+
+==============================
+Profile Name: {{Averelle}}
+==============================
+
+STRICT RULES:
+1) Generate realistic and professional company information.
+2) All data must logically match the Profile Name.
+3) If the profile name sounds like a person, generate a sole proprietorship or LLC.
+4) If the profile name sounds like a brand, generate a company-style entity.
+5) Phone numbers must follow US format: (XXX) XXX-XXXX
+6) Time Zone must match the generated State.
+7) Currency must match the Country.
+8) Do NOT leave any field blank.
+9) Output must follow the exact field structure below.
+10) Do NOT include explanations. Output only the structured result.
+
+=================================
+OUTPUT FORMAT
+=================================
+
+Company Info
+------------
+Company Name:
+Company Name 2:
+Day Phone #:
+Night Phone #:
+Email:
+Fax #:
+Website:
+Attention:
+
+Address
+------------
+Address Line 1:
+Address Line 2:
+Address Line 3:
+City:
+County:
+State:
+Country:
+Zip Code:
+Postal Code Ext:
+
+Company Time Zone:
+Home Currency:
+
+=================================
+
+ADDITIONAL LOGIC:
+- Generate a professional email using the domain from the Website.
+- Website must match company name (e.g., www.companyname.com).
+- Fax number must be different from phone numbers.
+- County must match the generated city/state.
+- Zip Code must match city/state format.
+- Address must be realistic and valid US format.
+- If profile name contains fashion-related wording, generate apparel-industry style company.
+- If profile name contains tech wording, generate tech-style company.
+
+Now generate the full System Parameters data based ONLY on the Profile Name above.

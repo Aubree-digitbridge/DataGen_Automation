@@ -1,0 +1,122 @@
+{
+  "global": {
+    "date_format": "YYYY-MM-DD",
+    "currency_decimals": 2
+  },
+  "datasets": {
+    "historical": {
+      "start_date": "2023-01-01",
+      "end_date": "2025-12-31"
+    },
+    "current": {
+      "start_date": "2026-01-01",
+      "end_date": "2026-03-02"
+    }
+  },
+  "entities": {
+   "Customer": {
+  "template_path": "templates/CustomerTemplate.csv",
+  "output_path": "output/Customer.csv",
+  "primary_key": ["CustomerCode"],
+  "required": ["CustomerCode", "CustomerName"],
+  "enums": {},
+  "fixed_values": {
+    "CustomerCode": [
+      "AMZ-eCom",
+      "Veeqo-Amazon",
+      "Bloomingdales",
+      "eBay",
+      "Etsy-LS",
+      "Etsy-VS",
+      "Facebook",
+      "Faire",
+      "Google-AL",
+      "Google-LB",
+      "Google-MA",
+      "Mirakl-HudsonsB",
+      "JCPenney",
+      "Mirakl-Kohls",
+      "Macys",
+      "Magento",
+      "Shopify",
+      "Squarespace",
+      "Tiktok",
+      "Walmart-eComm"
+    ]
+  },
+  "derived_rules": [
+    "CustomerName must equal CustomerCode but replace '-' with a space."
+    ],
+    "repeatable_fields": ["SalesRep", "SalesRep2"],
+  "uniqueness_rule": "For all columns except SalesRep and SalesRep2, values must vary by row (do not copy/paste the same values across customers). Use realistic but distinct addresses, phone/email, terms, tax IDs, etc."
+
+
+},
+    "Vendor": {
+      "template_path": "templates/VendorTemplate.csv",
+      "output_path": "output/Vendor.csv",
+      "seed_path": "templates/PurchaseOrder_Historical.csv",
+      "primary_key": [
+        "VendorCode"
+      ],
+      "required": [
+        "VendorCode"
+      ],
+      "default_rows": 80
+    },
+    "SalesOrder": {
+      "template_path_historical": "templates/SalesOrder_Historical.csv",
+      "template_path_current": "templates/SalesOrder_Current.csv",
+      "output_path_historical": "output/SalesOrder_Historical.csv",
+      "output_path_current": "output/SalesOrder_Current.csv",
+      "seed_path": "templates/SalesOrder_Historical.csv",
+      "primary_key": [
+        "OrderNumber"
+      ],
+      "required": [
+        "OrderNumber",
+        "CustomerCode",
+        "OrderDate"
+      ],
+      "foreign_keys": {},
+      "default_rows_historical": 800,
+      "default_rows_current": 80
+    },
+    "Invoice": {
+      "template_path_historical": "templates/Invoice_Historical.xlsx",
+      "template_path_current": "templates/Invoice_Current.csv",
+      "output_path_historical": "output/Invoice_Historical.csv",
+      "output_path_current": "output/Invoice_Current.csv",
+      "seed_path": "templates/Invoice_Current.csv",
+      "primary_key": [
+        "InvoiceNumber"
+      ],
+      "required": [
+        "InvoiceNumber",
+        "CustomerCode",
+        "InvoiceDate"
+      ],
+      "foreign_keys": {},
+      "default_rows_historical": 800,
+      "default_rows_current": 80
+    },
+    "PurchaseOrder": {
+      "template_path_historical": "templates/PurchaseOrder_Historical.csv",
+      "template_path_current": "templates/PurchaseOrder_Current.csv",
+      "output_path_historical": "output/PurchaseOrder_Historical.csv",
+      "output_path_current": "output/PurchaseOrder_Current.csv",
+      "seed_path": "templates/PurchaseOrder_Historical.csv",
+      "primary_key": [
+        "PoNum"
+      ],
+      "required": [
+        "PoNum",
+        "VendorCode",
+        "PoDate"
+      ],
+      "foreign_keys": {},
+      "default_rows_historical": 300,
+      "default_rows_current": 40
+    }
+  }
+}

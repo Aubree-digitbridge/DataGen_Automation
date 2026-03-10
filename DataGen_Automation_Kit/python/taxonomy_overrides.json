@@ -1,0 +1,45 @@
+{
+  "default": {
+    "Division": "Women",
+    "Department": "Women",
+    "Gender": "Women",
+    "Age Group": "Adult"
+  },
+  "Dress": {
+    "Category": "Apparel",
+    "Class": "Dresses",
+    "Subcategory": "Womens Dresses",
+    "Group": "Womens Apparel",
+    "Subgroup": "Dresses"
+  },
+  "Top": {
+    "Category": "Apparel",
+    "Class": "Tops",
+    "Subcategory": "Womens Tops",
+    "Group": "Womens Apparel",
+    "Subgroup": "Tops"
+  },
+  "Bottom": {
+    "Category": "Apparel",
+    "Class": "Bottoms",
+    "Subcategory": "Womens Bottoms",
+    "Group": "Womens Apparel",
+    "Subgroup": "Bottoms"
+  },
+  "Footwear": {
+    "Category": "Footwear",
+    "Class": "Shoes",
+    "Subcategory": "Womens Shoes",
+    "Group": "Womens Footwear",
+    "Subgroup": "Fashion Shoes",
+    "Division": "Footwear",
+    "Department": "Footwear"
+  },
+  "Fashion Item": {
+    "Category": "Apparel",
+    "Class": "Fashion",
+    "Subcategory": "General",
+    "Group": "Apparel & Accessories",
+    "Subgroup": "Fashion Item"
+  }
+}

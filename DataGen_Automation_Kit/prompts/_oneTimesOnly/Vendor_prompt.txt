@@ -1,0 +1,115 @@
+You are generating import-ready CSV data.
+
+STRICT RULES (do not violate):
+1) Output CSV ONLY. No explanations, no markdown, no code fences.
+2) The first line MUST be the header row EXACTLY as provided.
+3) Do NOT add/remove/rename columns.
+4) Every row must have the same number of columns as the header.
+5) Do not include blank lines.
+6) If a field contains commas, wrap that field in double quotes.
+7) Data must be unique across the file where applicable: VendorCode, VendorName, Contact, Email, Phone1–Phone4.
+8) Contact must always be FirstName + LastName.
+9) Phone numbers must be formatted exactly as (xxx) xxx-xxxx.
+
+OUTPUT LOCATION RULE:
+- Save/emit the final CSV directly to the output folder only.
+- Do NOT create intermediate files.
+
+ENTITY: Vendor
+ROWS TO GENERATE: 8
+
+CATEGORY REQUIREMENTS:
+- Exactly 5 vendors must be CLOTHES vendors (Apparel / Clothing / Garments / Fashion Wear).
+- Exactly 3 vendors must be SHOES vendors (Shoes / Footwear / Heels / Sneakers / Boots).
+
+HEADER (must match exactly):
+VendorCode, VendorName, Contact, Phone1, Phone2, Phone3, Phone4, Email, FirstDate, Currency, TaxRate, DiscountRate, BillName, BillCompany, BillAddressLine1, BillAddressLine2, BillCity, BillState, BillPostalCode, BillCountry, BillEmail, BillDaytimePhone, BillDescription, ShipName, ShipCompany, ShipAddressLine1, ShipAddressLine2, ShipCity, ShipState, ShipPostalCode, ShipCountry, ShipEmail, ShipDaytimePhone, ShipDescription
+
+PRIMARY KEY: VendorCode
+REQUIRED: VendorCode
+
+==============================
+VENDOR CODE RULE (FINAL DASH FORMAT)
+==============================
+
+VendorCode must be constructed as:
+
+1) Take the FULL FIRST WORD of VendorName (uppercase).
+2) Add a hyphen "-".
+3) For the remaining words:
+   - Remove filler words: CO, COMPANY, LLC, INC, LTD, CORPORATION, CORP, GROUP, HUB.
+   - From remaining valid words, take the FIRST LETTER of each word.
+4) Concatenate them after the hyphen.
+5) Convert entire VendorCode to UPPERCASE.
+6) No numbers.
+7) Only one hyphen allowed.
+8) Maximum total length: 20 characters.
+9) Must be unique.
+
+Examples:
+- Golden State Apparel Co → GOLDEN-SA
+- Pacific Clothing Mills LLC → PACIFIC-CM
+- Oakland Urban Apparel Inc → OAKLAND-UA
+- Irvine Elite Shoes Ltd → IRVINE-ES
+- Pasadena Sneaker Boots Hub → PASADENA-SB
+
+If total length exceeds 20 characters:
+- Trim abbreviation portion from the right until length ≤ 20.
+
+==============================
+PHONE ↔ CITY MATCHING RULES
+==============================
+
+City → Allowed Area Codes:
+
+- Los Angeles: (213) (310) (323) (424) (562) (626) (747) (818)
+- San Diego: (619) (858)
+- San Jose: (408) (669)
+- San Francisco: (415) (628)
+- Oakland: (510) (341)
+- Sacramento: (916) (279)
+- Fresno: (559)
+- Long Beach: (562)
+- Anaheim: (714) (657)
+- Riverside: (951)
+- Santa Barbara: (805)
+- Rancho Cucamonga: (909)
+- Irvine: (949)
+- Glendale: (818)
+- Pasadena: (626)
+
+PHONE RULES:
+- Determine BillCity first.
+- Phone1–Phone4 MUST use an allowed area code for that BillCity.
+- All four numbers in a row must share the SAME area code.
+- Do NOT use repetitive 555 patterns.
+- Use realistic varied prefixes (201–999).
+- Phone numbers must be unique across the file.
+- BillDaytimePhone MUST equal Phone1.
+
+==============================
+FIELD RULES
+==============================
+
+- Currency: USD
+- TaxRate: 0.00–9.50 (2 decimals)
+- DiscountRate: 0.00–15.00 (2 decimals)
+- FirstDate: within last 3 years (YYYY-MM-DD)
+- BillState & ShipState: CA
+- BillCountry & ShipCountry: USA
+- BillEmail must equal Email
+- Emails must be unique and realistic
+
+==============================
+FINAL VALIDATION BEFORE OUTPUT
+==============================
+
+- Exactly 8 rows.
+- 5 clothes + 3 shoes.
+- VendorCode follows dash format exactly.
+- VendorCode ≤ 20 characters.
+- Phone numbers match city and are realistic.
+- No duplicates anywhere.
+- Output CSV only.
+
+Now output the CSV.
