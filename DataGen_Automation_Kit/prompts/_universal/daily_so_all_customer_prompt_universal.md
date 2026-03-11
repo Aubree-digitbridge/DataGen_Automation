@@ -1,269 +1,390 @@
-Enterprise AI Prompt Framework
-Synthetic ERP / eCommerce Order Generator
-1️⃣ SYSTEM ROLE
+You are generating import-ready CSV data.
 
-You are a deterministic enterprise data generation engine.
+STRICT RULES (do not violate)
 
-Your responsibility is to generate ERP-import compatible CSV datasets that simulate realistic historical transaction data.
+Output CSV ONLY. No explanations, no markdown, no code fences.
 
-The dataset must follow all structural and logical constraints defined in this prompt.
+The first line MUST be the header row EXACTLY as provided.
 
-The output must always remain machine-importable.
+Do NOT add/remove/rename columns.
 
-2️⃣ EXECUTION MODEL
+Every row must have the same number of columns as the header.
 
-You must execute generation using four stages:
+Do not include blank lines.
 
-1️⃣ Load Source Data
-2️⃣ Validate Schema
-3️⃣ Generate Orders
-4️⃣ Final Validation
+If a field contains commas, wrap that field in double quotes.
 
-You must not output data until validation completes.
+ENTITY: SalesOrder
+DATASET TYPE: HISTORICAL (eCommerce realistic behavior)
 
-3️⃣ STRICT OUTPUT RULES
+================================================
+USER PARAMETERS (OBEY STRICTLY)
 
-Output CSV only.
+A) DATE RANGE
+Use today's date to determine StartDate and EndDate.
 
-Do NOT output:
+Date logic:
 
-explanations
+1. If today is Tuesday, Wednesday, Thursday, or Friday:
+	StartDate = today
+	EndDate = today
 
-markdown
+2. If today is Monday:
+	StartDate = last Saturday
+	EndDate = today (Monday)
 
-JSON
+3. If today is Saturday or Sunday:
+	StartDate = today
+	EndDate = today
 
-code blocks
+B) ORDER VOLUME
+OrdersToGenerate = 20
 
-comments
+OrdersToGenerate is the order count for ONE day.
 
-section titles
+If the resolved date range has multiple days,
+total orders to generate must be:
 
-additional text
+TotalOrders = OrdersToGenerate * NumberOfDaysInDateRange
 
-The first row must always be the header row.
+Example:
+If date range covers Sat, Sun, Mon (3 days) and OrdersToGenerate = 20,
+generate 60 total orders.
 
-Every row must contain exactly the same number of columns as the header.
+C) LINE QUANTITY LIMITS
+MinOrderQtyPerLine = 1
+MaxOrderQtyPerLine = 4
 
-Never:
+D) STYLE LIMITS (distinct SKUs per order)
+MinStylesPerOrder = 1
+MaxStylesPerOrder = 3
 
-add columns
+E) ORDER TOTAL LIMITS
+MinOrderTotalAmount = 45
+MaxOrderTotalAmount = 150
 
-remove columns
+F) ECOMMERCE BEHAVIOR CONTROLS
 
-rename columns
+%OrdersWithDiscount = 35
+DiscountRateOptions = 0
 
-reorder columns
+%OrdersWithTax = 0
+TaxRateOptions = 0
 
-If a field contains commas:
+%OrdersWithShippingCharge = 90
+ShippingAmountRange = 0.00 to 18.00
 
-Wrap the field in double quotes.
+%OrdersPaid = 5-12
 
-Never output blank rows.
+================================================
+G) ORDER NUMBER CONTROL
 
-4️⃣ HEADER STRUCTURE
+SequenceNumberStart = 1
 
-The first row must be exactly the following header.
+OrderNumber format must be:
+yyyyMMdd-sequenceNumber
 
-OrderNumber,OrderType,OrderStatus,OrderDate,ShipDate,DueDate,BillDate,EtaArrivalDate,EarliestShipDate,LatestShipDate,SignatureFlag,CustomerCode,CustomerName,Terms,TermsDays,Currency,SubTotalAmount,SalesAmount,TotalAmount,TaxableAmount,NonTaxableAmount,TaxRate,TaxAmount,DiscountRate,DiscountAmount,ShippingAmount,ShippingTaxAmount,MiscAmount,MiscTaxAmount,ChargeAndAllowanceAmount,ChannelAmount,PaidAmount,CreditAmount,Balance,DepositAmount,SalesRep,SalesRep2,SalesRep3,SalesRep4,CommissionRate,CommissionRate2,CommissionRate3,CommissionRate4,TotalWeight,ActualWeight,CancelCode,SalesDivision,CustomerSource,Fulfillment Status,Financial Status,AmountRefunded,IsEdi,ShippingCarrier,ShippingClass,MainTrackingNumber,MainReturnTrackingNumber,ChannelNum,ChannelAccountNum,ChannelOrderID,SecondaryChannelOrderID,ShippingAccount,RefNum,CustomerPoNum,Carton,EndBuyerUserID,EndBuyerName,EndBuyerEmail,ShipToName,ShipToFirstName,ShipToLastName,ShipToCompany,ShipToAddressLine1,ShipToAddressLine2,ShipToAddressLine3,ShipToCity,ShipToState,ShipToPostalCode,ShipToCounty,ShipToCountry,ShipToEmail,ShipToDaytimePhone,BillToName,BillToCompany,BillToAddressLine1,BillToAddressLine2,BillToAddressLine3,BillToCity,BillToState,BillToPostalCode,BillToCounty,BillToCountry,BillToEmail,BillToDaytimePhone,Notes,ShippingCode,WarehouseCode,ShipmentID,DepartmentCode,DivisionCode,Seq,ItemDate,SKU,UPC,CustomerSKU,SKUTitle,LotNum,Description,UOM,PackType,PackQty,PackPrice,OrderPack,ShipPack,CancelledPack,OpenPack,OrderQty,ShipQty,CancelledQty,OpenQty,PriceRule,Price,DiscountPrice,ExtAmount,ItemTotalAmount,ShipAmount,CancelledAmount,OpenAmount,Stockable,Taxable,Costable,IsProfit,LotInDate,LotExpDate,DBChannelOrderLineRowID,ItemShippingAmount,ShippingCost,ItemTaxAmount,ItemShippingTaxAmount,ItemDiscountRate,ItemDiscountAmount,ItemNotes,ItemCancelCode,Lineitem fulfillment status,Lineitem taxable,ChannelItemID,EAN,MPN,ExternalBarcode,PodInfo
-
-5️⃣ ATTACHED INPUT FILES
-
-The AI request will include attachments.
-
-Customer_source.csv
-Customer-Channel-ChannelAccountMapping.csv
-SKU_Only.csv
-
-You must read these files before generating data.
-
-Do not assume additional files.
-
-6️⃣ SOURCE DATA USAGE
-Customer_source.csv
-
-Provides:
-
-CustomerCode
-CustomerName
-Type
-
-Shipping fields
-
-ShipName
-Contact
-Contact2
-ShipCompany
-ShipAddressLine1
-ShipAddressLine2
-ShipDescription
-ShipCity
-ShipState
-ShipPostalCode
-ShipCounty
-ShipCountry
-ShipEmail
-ShipDaytimePhone
-
-Customer-Channel Mapping
-
-CustomerCode → ChannelNum, ChannelAccountNum
-
-Mapping must come from the same row.
-
-SKU Pool
-
-SKU_Only.csv provides:
-
-SKU list.
-
-Rules:
-
-SKUs must come only from this file
-
-no SKU duplication within an order
-
-distribute SKUs across dataset
-
-7️⃣ DATE LOGIC
-
-Use today's system date.
-
-Tue–Fri
-
-StartDate = today
-EndDate = today
-
-Monday
-
-StartDate = last Saturday
-EndDate = Monday
-
-Weekend
-
-StartDate = today
-EndDate = today
-
-8️⃣ ORDER VOLUME
-
-OrdersPerDay = 20
-
-TotalOrders = OrdersPerDay × NumberOfDays
-
-9️⃣ ORDER NUMBER RULE
-
-Format:
-
-yyyyMMdd-sequence
-
-Example
-
+Example:
 20260603-1
 20260603-2
 
-Rules
+Generation rules:
 
-Sequence increments sequentially.
+1. Use OrderDate (yyyyMMdd) as the prefix of OrderNumber.
+2. The first generated order of each date uses SequenceNumberStart.
+3. Each subsequent order on the same date increments sequenceNumber by +1.
+4. sequenceNumber must remain sequential with no gaps per date.
+5. OrderNumber must be unique per order.
 
-No gaps per date.
+================================================
+POST GENERATION PARAMETER UPDATE
 
-Reset sequence per day.
+After the dataset has been generated:
 
-🔟 ORDER GENERATION
+1. For each date in the generated dataset, identify the largest sequenceNumber used.
+2. Calculate the next starting value:
+
+NextSequenceNumberStart = LastSequenceNumber + 1
+
+3. Return the updated parameter value for the next run.
+
+Example:
+
+If the last OrderNumber for 20260603 is 20260603-450
+
+Return:
+
+For 20260603, SequenceNumberStart = 451
+
+================================================
+SOURCE FILE RULES
+
+Customers source:
+data/Customer_source.csv
+
+Customer-channel mapping source:
+data\Customer-Channel-ChannelAccountMapping.csv
+
+Use ONLY CustomerCode and CustomerName from data/Customer_source.csv.
+
+CustomerCode and CustomerName must match exactly from the same row.
+
+Populate ChannelNum and ChannelAccountNum using mapping:
+
+CustomerCode → ChannelNum, ChannelAccountNum
+
+For each order, ChannelNum and ChannelAccountNum must come from the same mapping row.
+
+================================================
+MANDATORY ADDRESS RULES
+
+ShipTo fields must NOT be blank:
+
+ShipToName
+ShipToFirstName
+ShipToLastName
+ShipToCompany
+ShipToAddressLine1
+ShipToAddressLine2
+ShipToAddressLine3
+ShipToCity
+ShipToState
+ShipToPostalCode
+ShipToCounty
+ShipToCountry
+ShipToEmail
+ShipToDaytimePhone
+
+Populate ShipTo fields from data/Customer_source.csv:
+
+ShipName → ShipToName
+Contact → ShipToFirstName
+Contact2 → ShipToLastName
+ShipCompany → ShipToCompany
+ShipAddressLine1 → ShipToAddressLine1
+ShipAddressLine2 → ShipToAddressLine2
+ShipDescription → ShipToAddressLine3
+ShipCity → ShipToCity
+ShipState → ShipToState
+ShipPostalCode → ShipToPostalCode
+ShipCounty → ShipToCounty
+ShipCountry → ShipToCountry
+ShipEmail → ShipToEmail
+ShipDaytimePhone → ShipToDaytimePhone
+
+================================================
+BILL TO RULE
+
+BillTo fields are REQUIRED.
+
+BillToName
+BillToCompany
+BillToAddressLine1
+BillToAddressLine2
+BillToAddressLine3
+BillToCity
+BillToState
+BillToPostalCode
+BillToCounty
+BillToCountry
+BillToEmail
+BillToDaytimePhone
+
+BillTo values may be copied from ShipTo values.
+
+================================================
+DAILY ORDER DISTRIBUTION RULE
+
+Orders must be distributed across the date range.
+
+Maximum orders per day = 20.
+
+Ensure no single day exceeds 20 orders.
+
+================================================
+PRODUCT SOURCES
+
+Use one single source file for SKU pool:
+
+SKU_Only.csv
+
+Rules:
+
+SKU must come from SKU_Only.csv.
+
+Do NOT repeat the same SKU within the same order.
+
+Spread SKU usage across the dataset.
+
+================================================
+CSV STRUCTURE VALIDATION
+
+Before generating rows:
+
+ColumnCount = number of columns in the header.
+
+Every generated row must contain exactly ColumnCount fields.
+
+Never add columns.
+Never skip columns.
+
+================================================
+ORDER GENERATION METHOD
+
+STEP 1 — Generate Order Headers
+
+Generate exactly OrdersToGenerate orders.
+
+Each order must contain:
+
+OrderNumber
+ChannelOrderID
+CustomerCode
+CustomerName
+ChannelNum
+ChannelAccountNum
+OrderDate
+
+Ensure:
+
+OrderNumber increments sequentially.
+ChannelOrderID is unique per order.
+No day exceeds 20 orders.
+
+STEP 2 — Assign Line Items
 
 For each order:
 
-Select customer from Customer_source.csv.
+Determine NumStyles between MinStylesPerOrder and MaxStylesPerOrder.
 
-Lookup channel mapping.
+For each style:
 
-Assign:
+Select SKU from the SKU pool.
 
-ChannelNum
-ChannelAccountNum
+Ensure SKU is not repeated within the same order.
 
 Generate:
 
-ChannelOrderID (unique)
+OrderQty
+Price
+ExtAmount
 
-1️⃣1️⃣ LINE ITEM GENERATION
+================================================
+PRICE RULE
 
-Each order must contain 1–3 SKUs.
+Prices must be realistic for ecommerce orders.
 
-For each SKU:
+Typical price range:
+$12 to $80.
 
-OrderQty = random 1–4
-Price = random 12–80
+Prices should allow order totals to reach limits without excessive quantity adjustments.
 
-Calculate:
+================================================
+ORDER TOTAL CALCULATION
 
-ExtAmount = OrderQty × Price
+ExtAmount = OrderQty * Price
 
-1️⃣2️⃣ ORDER TOTAL CALCULATION
-
-SubTotalAmount = Sum(ExtAmount)
+SubTotalAmount = Sum(line ExtAmount) - DiscountAmount
 
 TaxAmount = 0
 
-ShippingAmount
+TotalAmount = SubTotalAmount + ShippingAmount
 
-90% of orders:
+================================================
+HARD CONSTRAINT
 
-random 0–18
+MinOrderTotalAmount ≤ TotalAmount ≤ MaxOrderTotalAmount
 
-TotalAmount
+If below minimum:
+Increase quantity or add style.
 
-SubTotalAmount + ShippingAmount − DiscountAmount
+If above maximum:
+Reduce quantity or styles.
 
-Constraint
-
-45 ≤ TotalAmount ≤ 150
-
-1️⃣3️⃣ ADDRESS POPULATION
-
-Populate ShipTo fields from Customer_source.csv.
-
-BillTo fields may copy ShipTo values.
-
-No ShipTo field may be blank.
-
-1️⃣4️⃣ DEFAULT VALUES
+================================================
+ORDER DEFAULT VALUES
 
 OrderType = 1
+
 OrderStatus = 0
+
 Currency = USD
 
-ShipQty = 0
-OpenQty = OrderQty
+UOM = EA
 
 Stockable = TRUE
-Taxable = TRUE
+
 Costable = TRUE
+
+Taxable = TRUE
+
 IsProfit = TRUE
+
+ShipQty = 0
+
+OpenQty = OrderQty
+
+================================================
+PAYMENT AND FULFILLMENT STATUS
+
+Financial Status = ' '
+
+Fulfillment Status = ' '
 
 PaidAmount = 0
 
 Balance = TotalAmount
 
-1️⃣5️⃣ VALIDATION RULES
+================================================
+CUSTOMER TYPE BASED ORDER RULES (APPENDED)
+
+Customer source for Type must be:
+data/Customer_source.csv
+
+This file contains three Type values:
+
+- Ecommerce
+- Retail
+- Wholesale
+
+Type behavior rules:
+
+1) Ecommerce
+- Follow the current existing SalesOrder rules in this prompt.
+
+2) Retail
+- OrderQty and order amount for each order must be 2x of Ecommerce baseline behavior.
+- Item Price must be MSRP * 0.8.
+- Retail orders can only be placed on Monday.
+
+3) Wholesale
+- OrderQty and order amount for each order must be 4x of Ecommerce baseline behavior.
+- Item Price must use WSP.
+- Wholesale orders can only be placed on Wednesday.
+
+Scheduling rule by Type:
+- Ecommerce: follow current date logic in this prompt.
+- Retail: only Monday.
+- Wholesale: only Wednesday.
+
+================================================
+FINAL VALIDATION
 
 Before output:
 
-Confirm:
+1. Exactly OrdersToGenerate unique orders exist.
+2. No day exceeds 20 orders.
+3. OrderNumber sequence has no gaps.
+4. All ShipTo and BillTo fields are populated.
+5. TotalAmount is within limits.
+6. No SKU repeats within the same order.
+7. Every row matches the header column count.
 
-✔ correct number of orders
-✔ sequential OrderNumber
-✔ SKU uniqueness per order
-✔ ShipTo fields populated
-✔ TotalAmount within limits
-✔ identical column count per row
+================================================
+FINAL OUTPUT
 
-1️⃣6️⃣ FINAL OUTPUT
+Generate exactly OrdersToGenerate orders.
+
+Multiple rows per order if NumStyles > 1.
 
 Output CSV only.
-
-First row = header.
-
-Orders may contain multiple rows.
-
-Do not output explanations.
