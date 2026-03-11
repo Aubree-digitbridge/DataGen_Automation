@@ -1,258 +1,354 @@
 from pathlib import Path
-import random
-import string
-import re
-from collections import defaultdict, Counter
-from datetime import datetime
-from openpyxl import load_workbook, Workbook
 import csv
+import random
+import re
+import string
+from collections import defaultdict
+from datetime import datetime
+
+from openpyxl import Workbook, load_workbook
+
 
 base = Path(__file__).resolve().parents[1]
-prompt_file = base / 'prompts' / '_daily' / 'Shipment_trackingNumber_prompt.txt'
+prompt_file = base / "prompts" / "_daily" / "Shipment_trackingNumber_prompt.txt"
+completed_file = base / "output" / "Shipment-Tracking_completed.xlsx"
 
 
 def parse_prompt_paths(path: Path):
-    txt = path.read_text(encoding='utf-8')
+    txt = path.read_text(encoding="utf-8")
     vals = {}
     for line in txt.splitlines():
-        if '=' in line:
-            key, value = line.split('=', 1)
+        if "=" in line:
+            key, value = line.split("=", 1)
             k = key.strip().upper()
-            if k in {'FILE_NAME', 'CHANNEL_ACCOUNT_MAPPING_FILE', 'OUTPUT_FOLDER'}:
+            if k in {"FILE_NAME", "CHANNEL_ACCOUNT_MAPPING_FILE", "OUTPUT_FOLDER"}:
                 vals[k] = value.strip()
-    missing = {'FILE_NAME', 'CHANNEL_ACCOUNT_MAPPING_FILE', 'OUTPUT_FOLDER'} - set(vals)
+
+    missing = {"FILE_NAME", "CHANNEL_ACCOUNT_MAPPING_FILE", "OUTPUT_FOLDER"} - set(vals)
     if missing:
-        raise RuntimeError(f'Missing required prompt constants: {sorted(missing)}')
+        raise RuntimeError(f"Missing required prompt constants: {sorted(missing)}")
     return vals
 
 
-cfg = parse_prompt_paths(prompt_file)
-input_file = base / cfg['FILE_NAME']
-mapping_file = base / cfg['CHANNEL_ACCOUNT_MAPPING_FILE']
-output_folder = base / cfg['OUTPUT_FOLDER']
-completed_file = base / 'output' / 'Shipment-Tracking_completed.xlsx'
+def normalize_text(value: str) -> str:
+    return re.sub(r"\s+", " ", (value or "").strip()).lower()
 
-output_folder.mkdir(parents=True, exist_ok=True)
-for old in output_folder.glob('*.xlsx'):
-    old.unlink()
 
-mapping = {}
-with mapping_file.open('r', encoding='utf-8-sig', newline='') as f:
-    rows = list(csv.DictReader(f))
+def parse_channel_variants(raw_channel: str):
+    raw = (raw_channel or "").strip()
+    if not raw:
+        return "", ""
+
+    left = raw
+    right = ""
+    m = re.match(r"^(.*?)\s*\((.*?)\)\s*$", raw)
+    if m:
+        left = m.group(1).strip()
+        right = m.group(2).strip()
+
+    return left, right
+
+
+def load_mapping(path: Path):
+    with path.open("r", encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+
     if not rows:
-        raise RuntimeError('Mapping file is empty')
+        raise RuntimeError("Mapping file is empty")
+
     cols = list(rows[0].keys())
     lower = {str(c).strip().lower(): c for c in cols}
-    key_col = lower.get('channelaccountnum') or lower.get('channel account num') or lower.get('channel_account_num')
-    name_col = lower.get('channelaccountname') or lower.get('channel account name') or lower.get('channel_account_name')
-    if not key_col or not name_col:
-        raise RuntimeError(f'Missing mapping columns. Found: {cols}')
+
+    num_col = (
+        lower.get("channelaccountnum")
+        or lower.get("channel account num")
+        or lower.get("channel_account_num")
+    )
+    account_name_col = (
+        lower.get("channelaccountname")
+        or lower.get("channel account name")
+        or lower.get("channel_account_name")
+    )
+    channel_name_col = (
+        lower.get("channelname")
+        or lower.get("channel name")
+        or lower.get("channel_name")
+    )
+
+    if not num_col or not account_name_col:
+        raise RuntimeError(f"Missing mapping columns. Found: {cols}")
+
+    by_num = {}
+    by_account_name = {}
+    by_channel_name = {}
+
     for r in rows:
-        k = str(r.get(key_col) or '').strip()
-        v = str(r.get(name_col) or '').strip()
-        if k:
-            mapping[k] = v if v else k
+        num = str(r.get(num_col) or "").strip()
+        account_name = str(r.get(account_name_col) or "").strip()
+        channel_name = str(r.get(channel_name_col) or "").strip() if channel_name_col else ""
 
-wb = load_workbook(input_file)
-ws = wb.active
-headers = [c.value for c in ws[1]]
-index = {str(h).strip(): i for i, h in enumerate(headers)}
-carrier_col = index.get('Carrier')
-track_col = index.get('Tracking Number')
-chan_col = index.get('ChannelAccountNum')
-channel_col = index.get('Channel')
-if channel_col is None:
-    channel_col = index.get('channel')
-if channel_col is None:
-    channel_col = index.get('Channel Name')
-if channel_col is None:
-    channel_col = index.get('channelName')
-order_col = index.get('channelOrderID')
-if order_col is None:
-    order_col = index.get('Channel Order ID')
-if order_col is None:
-    order_col = index.get('ChannelOrderID')
+        if not num:
+            continue
 
-required = {
-    'Carrier': carrier_col,
-    'Tracking Number': track_col,
-    'channelOrderID/Channel Order ID': order_col,
-}
-missing = [k for k, v in required.items() if v is None]
-if missing:
-    raise RuntimeError(f'Missing required columns: {missing}; headers: {headers}')
+        by_num[num] = account_name or num
+
+        if account_name:
+            by_account_name[normalize_text(account_name)] = num
+        if channel_name:
+            by_channel_name[normalize_text(channel_name)] = num
+
+    return by_num, by_account_name, by_channel_name
 
 
-def resolve_channel_label(data_row):
-    if channel_col is not None:
-        channel_value = str(data_row[channel_col] or '').strip()
-        if channel_value:
-            return channel_value
-
-    channel_account_num = str(data_row[chan_col] or '').strip() if chan_col is not None else ''
-    if channel_account_num:
-        mapped = mapping.get(channel_account_num, '').strip()
-        if mapped:
-            return mapped
-        return channel_account_num
-
-    return 'UNKNOWN_CHANNEL'
+def index_headers(ws):
+    headers = [str(c.value or "").strip() for c in ws[1]]
+    return headers, {h: i for i, h in enumerate(headers)}
 
 
-def gen_ups():
+def find_col(index, *names):
+    for n in names:
+        if n in index:
+            return index[n]
+    return None
+
+
+def ensure_col(ws, headers, index, name):
+    if name in index:
+        return index[name]
+
+    headers.append(name)
+    col_idx_1_based = len(headers)
+    ws.cell(row=1, column=col_idx_1_based, value=name)
+    index[name] = col_idx_1_based - 1
+    return index[name]
+
+
+def gen_ups(rng):
     chars = string.ascii_uppercase + string.digits
-    return '1Z' + ''.join(random.choice(chars) for _ in range(16))
+    return "1Z" + "".join(rng.choice(chars) for _ in range(16))
 
 
-def gen_fedex():
-    return ''.join(random.choice(string.digits) for _ in range(random.choice([12, 15])))
+def gen_fedex(rng):
+    return "".join(rng.choice(string.digits) for _ in range(rng.choice([12, 15])))
 
 
-def gen_usps():
-    return ''.join(random.choice(string.digits) for _ in range(random.choice([20, 21, 22])))
+def gen_usps(rng):
+    return "".join(rng.choice(string.digits) for _ in range(rng.choice([20, 21, 22])))
 
 
-def gen_dhl():
-    return ''.join(random.choice(string.digits) for _ in range(10))
+def gen_dhl(rng):
+    return "".join(rng.choice(string.digits) for _ in range(10))
 
 
-def gen_track(carrier):
-    c = str(carrier or '').strip().upper()
-    if c == 'FEDEX':
-        return gen_fedex()
-    if c == 'USPS':
-        return gen_usps()
-    if c == 'DHL':
-        return gen_dhl()
-    return gen_ups()
+def gen_track(carrier, rng):
+    c = (carrier or "").strip().upper()
+    if c == "FEDEX":
+        return gen_fedex(rng)
+    if c == "USPS":
+        return gen_usps(rng)
+    if c == "DHL":
+        return gen_dhl(rng)
+    return gen_ups(rng)
 
-rows = list(ws.iter_rows(min_row=2))
-order_groups = defaultdict(list)
-for row in rows:
-    order_id = str(row[order_col].value or '').strip()
-    order_groups[order_id].append(row)
 
-all_existing = set()
-for row in rows:
-    t = str(row[track_col].value or '').strip()
-    if t:
-        all_existing.add(t)
+def sanitize_filename(value: str) -> str:
+    cleaned = re.sub(r'[<>:"/\\|?*]', "_", (value or "").strip()).rstrip(".")
+    return cleaned or "UNKNOWN_CHANNEL"
 
-filled_orders = 0
-propagated_orders = 0
-newly_filled_cells = 0
 
-for order_id, group in order_groups.items():
-    existing_in_group = []
-    for row in group:
-        t = str(row[track_col].value or '').strip()
+def get_cell_str(row_cells, idx):
+    if idx is None:
+        return ""
+    return str(row_cells[idx].value or "").strip()
+
+
+def resolve_channel_account_num(row_cells, channel_account_col, channel_col, by_account_name, by_channel_name):
+    direct = get_cell_str(row_cells, channel_account_col)
+    if direct:
+        return direct
+
+    channel_raw = get_cell_str(row_cells, channel_col)
+    if not channel_raw:
+        return ""
+
+    left, right = parse_channel_variants(channel_raw)
+
+    for candidate in [left, right, channel_raw]:
+        key = normalize_text(candidate)
+        if not key:
+            continue
+        if key in by_account_name:
+            return by_account_name[key]
+        if key in by_channel_name:
+            return by_channel_name[key]
+
+    return ""
+
+
+def main():
+    cfg = parse_prompt_paths(prompt_file)
+    input_file = base / cfg["FILE_NAME"]
+    mapping_file = base / cfg["CHANNEL_ACCOUNT_MAPPING_FILE"]
+    output_folder = base / cfg["OUTPUT_FOLDER"]
+
+    output_folder.mkdir(parents=True, exist_ok=True)
+    for old in output_folder.glob("*.xlsx"):
+        old.unlink()
+
+    if not input_file.exists():
+        raise FileNotFoundError(f"Input file not found: {input_file.as_posix()}")
+
+    by_num, by_account_name, by_channel_name = load_mapping(mapping_file)
+
+    wb = load_workbook(input_file)
+    ws = wb.active
+
+    headers, index = index_headers(ws)
+
+    order_col = find_col(index, "channelOrderID", "Channel Order ID", "ChannelOrderID")
+    if order_col is None:
+        raise RuntimeError(f"Missing required order id column. Headers: {headers}")
+
+    carrier_col = find_col(index, "Carrier")
+    tracking_col = find_col(index, "Tracking Number")
+    channel_account_col = find_col(index, "ChannelAccountNum")
+    channel_col = find_col(index, "Channel", "channel", "Channel Name", "channelName")
+
+    if tracking_col is None:
+        tracking_col = ensure_col(ws, headers, index, "Tracking Number")
+
+    if channel_account_col is None:
+        channel_account_col = ensure_col(ws, headers, index, "ChannelAccountNum")
+
+    rng = random.Random(20260310)
+
+    rows = list(ws.iter_rows(min_row=2, max_col=len(headers)))
+    order_groups = defaultdict(list)
+    for row in rows:
+        order_id = get_cell_str(row, order_col)
+        order_groups[order_id].append(row)
+
+    used_tracking = set()
+    for row in rows:
+        t = get_cell_str(row, tracking_col)
         if t:
-            existing_in_group.append(t)
+            used_tracking.add(t)
 
-    if existing_in_group:
-        chosen = existing_in_group[0]
-        if any(x != chosen for x in existing_in_group[1:]):
-            raise RuntimeError(f'Conflicting existing tracking numbers within channelOrderID={order_id}')
+    orders_new_tracking = 0
+    orders_propagated = 0
+    cells_filled = 0
+    channel_account_derived = 0
+
+    for order_id, group in order_groups.items():
+        existing = []
         for row in group:
-            cur = str(row[track_col].value or '').strip()
-            if not cur:
-                row[track_col].value = chosen
-                newly_filled_cells += 1
-        propagated_orders += 1
-        continue
+            t = get_cell_str(row, tracking_col)
+            if t:
+                existing.append(t)
 
-    carrier = str(group[0][carrier_col].value or '').strip()
-    t = gen_track(carrier)
-    while t in all_existing:
-        t = gen_track(carrier)
-    all_existing.add(t)
-    for row in group:
-        row[track_col].value = t
-        newly_filled_cells += 1
-    filled_orders += 1
+        if existing:
+            chosen = existing[0]
+            if any(x != chosen for x in existing[1:]):
+                raise RuntimeError(f"Conflicting existing tracking numbers within order id={order_id}")
 
-completed_file_written = completed_file
-try:
-    wb.save(completed_file_written)
-except PermissionError:
-    completed_file_written = base / 'output' / f"Shipment-Tracking_completed_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
-    wb.save(completed_file_written)
+            for row in group:
+                if not get_cell_str(row, tracking_col):
+                    row[tracking_col].value = chosen
+                    cells_filled += 1
+            orders_propagated += 1
+        else:
+            carrier = ""
+            if carrier_col is not None:
+                carrier = get_cell_str(group[0], carrier_col)
 
-all_data_rows = [list(r) for r in ws.iter_rows(min_row=2, values_only=True)]
-by_channel = defaultdict(list)
-for data_row in all_data_rows:
-    by_channel[resolve_channel_label(data_row)].append(data_row)
+            t = gen_track(carrier, rng)
+            while t in used_tracking:
+                t = gen_track(carrier, rng)
+            used_tracking.add(t)
 
-invalid = re.compile(r'[<>:"/\\|?*]')
-written_files = []
-for channel_name, channel_rows in by_channel.items():
-    file_name_base = channel_name if channel_name else 'UNKNOWN_CHANNEL'
-    safe_name = invalid.sub('_', file_name_base).strip().rstrip('.') or 'UNKNOWN_CHANNEL'
-    out_file = output_folder / f'{safe_name}.xlsx'
+            for row in group:
+                row[tracking_col].value = t
+                cells_filled += 1
+            orders_new_tracking += 1
 
-    nwb = Workbook()
-    nws = nwb.active
-    out_headers = [h for i, h in enumerate(headers) if i != chan_col] if chan_col is not None else list(headers)
-    nws.append(out_headers)
-    for row in channel_rows:
-        nws.append([v for i, v in enumerate(row) if i != chan_col] if chan_col is not None else list(row))
-    nwb.save(out_file)
-    written_files.append(out_file.name)
+        for row in group:
+            if not get_cell_str(row, channel_account_col):
+                resolved = resolve_channel_account_num(
+                    row,
+                    channel_account_col,
+                    channel_col,
+                    by_account_name,
+                    by_channel_name,
+                )
+                if resolved:
+                    row[channel_account_col].value = resolved
+                    channel_account_derived += 1
 
-pat_ups = re.compile(r'^1Z[A-Z0-9]{16}$')
-pat_fedex = re.compile(r'^(\d{12}|\d{15})$')
-pat_usps = re.compile(r'^\d{20,22}$')
-pat_dhl = re.compile(r'^\d{10}$')
+    completed_file_written = completed_file
+    try:
+        wb.save(completed_file_written)
+    except PermissionError:
+        completed_file_written = (
+            base
+            / "output"
+            / f"Shipment-Tracking_completed_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
+        )
+        wb.save(completed_file_written)
 
-bad_format = 0
-tracking_values = []
-for r in ws.iter_rows(min_row=2, values_only=True):
-    carrier = str(r[carrier_col] or '').strip().upper()
-    track = str(r[track_col] or '').strip()
-    tracking_values.append(track)
-    if carrier == 'FEDEX':
-        ok = bool(pat_fedex.match(track))
-    elif carrier == 'USPS':
-        ok = bool(pat_usps.match(track))
-    elif carrier == 'DHL':
-        ok = bool(pat_dhl.match(track))
-    else:
-        ok = bool(pat_ups.match(track))
-    if not ok:
-        bad_format += 1
+    out_headers = [h for i, h in enumerate(headers) if i != channel_account_col]
+    by_channel_account = defaultdict(list)
 
-dups = sum(v - 1 for v in Counter(tracking_values).values() if v > 1)
+    all_data_rows = [list(r) for r in ws.iter_rows(min_row=2, max_col=len(headers), values_only=True)]
+    for r in all_data_rows:
+        account_num = str(r[channel_account_col] or "").strip()
+        if not account_num:
+            account_num = "UNKNOWN_CHANNEL"
+        by_channel_account[account_num].append(r)
 
-# order consistency validation
-order_tracking_violations = 0
-order_channels = defaultdict(set)
-order_tracking = defaultdict(set)
-for r in ws.iter_rows(min_row=2, values_only=True):
-    oid = str(r[order_col] or '').strip()
-    ch = resolve_channel_label(r)
-    tr = str(r[track_col] or '').strip()
-    order_channels[oid].add(ch)
-    order_tracking[oid].add(tr)
+    written_files = []
+    for account_num, channel_rows in sorted(by_channel_account.items()):
+        channel_name = by_num.get(account_num, account_num)
+        out_file = output_folder / f"{sanitize_filename(channel_name)}.xlsx"
 
-for oid, ts in order_tracking.items():
-    if len(ts) > 1:
-        order_tracking_violations += 1
+        nwb = Workbook()
+        nws = nwb.active
+        nws.append(out_headers)
+        for row in channel_rows:
+            nws.append([v for i, v in enumerate(row) if i != channel_account_col])
+        nwb.save(out_file)
+        written_files.append(out_file.name)
 
-orders_in_multiple_channels = sum(1 for chs in order_channels.values() if len(chs) > 1)
+    # Validation: each tracking number maps to only one order id.
+    tracking_to_orders = defaultdict(set)
+    order_to_tracking = defaultdict(set)
+    for r in ws.iter_rows(min_row=2, max_col=len(headers), values_only=True):
+        oid = str(r[order_col] or "").strip()
+        tr = str(r[tracking_col] or "").strip()
+        if tr:
+            tracking_to_orders[tr].add(oid)
+        if oid:
+            order_to_tracking[oid].add(tr)
 
-print('prompt_file', prompt_file.as_posix())
-print('input_file', input_file.as_posix())
-print('mapping_file', mapping_file.as_posix())
-print('output_folder', output_folder.as_posix())
-print('completed_file', completed_file_written.as_posix())
-print('rows_total', len(all_data_rows))
-print('orders_total', len(order_groups))
-print('orders_with_new_tracking_generated', filled_orders)
-print('orders_with_existing_tracking_propagated', propagated_orders)
-print('cells_filled', newly_filled_cells)
-print('tracking_duplicates_dataset', dups)
-print('carrier_format_failures', bad_format)
-print('order_tracking_violations', order_tracking_violations)
-print('orders_in_multiple_channels', orders_in_multiple_channels)
-print('split_files_written', len(written_files))
-print('split_files', sorted(written_files))
+    tracking_reused_across_orders = sum(1 for orders in tracking_to_orders.values() if len(orders) > 1)
+    order_tracking_violations = sum(1 for tracks in order_to_tracking.values() if len(tracks) > 1)
+
+    print("prompt_file", prompt_file.as_posix())
+    print("input_file", input_file.as_posix())
+    print("mapping_file", mapping_file.as_posix())
+    print("output_folder", output_folder.as_posix())
+    print("completed_file", completed_file_written.as_posix())
+    print("rows_total", len(all_data_rows))
+    print("orders_total", len(order_groups))
+    print("orders_with_new_tracking_generated", orders_new_tracking)
+    print("orders_with_existing_tracking_propagated", orders_propagated)
+    print("cells_filled", cells_filled)
+    print("channel_accountnum_derived", channel_account_derived)
+    print("tracking_unique_values", len(tracking_to_orders))
+    print("tracking_reused_across_orders", tracking_reused_across_orders)
+    print("order_tracking_violations", order_tracking_violations)
+    print("split_files_written", len(written_files))
+    print("split_files", sorted(written_files))
+
+
+if __name__ == "__main__":
+    main()

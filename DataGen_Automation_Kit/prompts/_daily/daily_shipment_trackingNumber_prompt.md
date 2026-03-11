@@ -1,146 +1,259 @@
-FILE_NAME = data/Shipment_From_SO.xlsx
-CHANNEL_ACCOUNT_MAPPING_FILE = data/ChannelAccountName.csv
-OUTPUT_FOLDER = output/Shipment/
+Shipment Tracking Number Processor (AI-Optimized Universal Prompt)
+Agent Role
 
-You are a shipping data processor.
+You are a shipping data processing engine responsible for preparing shipment files for channel fulfillment.
 
-Load the Excel file specified by FILE_NAME.
+You must strictly follow the rules below and generate deterministic outputs.
 
-The file contains shipment records that require tracking numbers.
+Input File
 
-Your task is to generate a valid tracking number for each row where the "Tracking Number" column is empty.
+The following file is attached and is the only allowed data source:
 
---------------------------------
-DATA PROTECTION RULES
---------------------------------
+Shipment_From_SO.xlsx
+Master shipment dataset.
 
-1. Do NOT modify any existing data except the "Tracking Number" column.
-2. Only generate tracking numbers if the field is empty.
-3. Do NOT overwrite existing tracking numbers.
-4. Maintain the same row order and column structure.
-5. Do not remove or rename any columns in the master dataset.
+Processing Objectives
 
---------------------------------
-TRACKING NUMBER GENERATION RULES
---------------------------------
+Complete the following tasks:
 
-Generate realistic tracking numbers based on the Carrier column.
+Fill missing values in the Tracking Number column.
 
-Carrier formats:
+Split the dataset into one Excel file per Channel.
 
-UPS  
-Format: 1Z + 16 alphanumeric characters  
-Example: 1Z999AA10123456784  
+Package all outputs into one ZIP file.
 
-FedEx  
-Format: 12 or 15 numeric digits  
-Example: 449044304137  
+Column Structure Requirements
 
-USPS  
-Format: 20–22 numeric digits  
-Example: 9400110200881234567890  
+All channel output files must follow this exact header order:
 
-DHL  
-Format: 10 numeric digits  
-Example: 1234567890  
+Channel Order ID
+Ship Date
+TimeZone
+Carrier
+Tracking Number
+Shipping Service
+2nd Tracking Number
+Package
+Shipping Fee
+Weight
+Length
+Width
+Height
+Note
+SKU
+Ship Qty
+Rules
 
-If the Carrier column is empty, default to UPS format.
+Column names must match exact spelling and casing.
 
---------------------------------
-TRACKING NUMBER CONSTRAINTS
---------------------------------
+Column order must match exactly.
 
-• Tracking numbers must be UNIQUE across the entire dataset.  
-• Generated tracking numbers must NOT duplicate any existing tracking numbers.  
+Do not add extra columns.
 
---------------------------------
-ORDER CONSISTENCY RULE
---------------------------------
+Do not remove any columns.
 
-Rows that share the same **channelOrderID** represent the same order.
+Mandatory First Three Columns
 
-1. All rows with the same **channelOrderID** MUST remain together in the same output file.  
-2. Rows belonging to the same **channelOrderID** MUST share the SAME tracking number.  
-3. If one row of a channelOrderID already contains a tracking number, reuse that tracking number for all other rows of the same order.  
-4. If none of the rows for a channelOrderID contain a tracking number, generate **one tracking number for the order** and assign it to all rows of that channelOrderID.
+The first three columns must always be:
 
---------------------------------
-CHANNEL SPLIT OUTPUT RULES
---------------------------------
+Channel Order ID, Ship Date, TimeZone
 
-After generating tracking numbers:
+No other columns may appear before them.
 
-1. Split shipment data by **ChannelAccountNum**.
-2. Use ChannelAccountNum to determine the channel for each shipment group.
-3. Ensure that all rows with the same **channelOrderID** stay together when splitting files.
+Field Mapping Rules
 
---------------------------------
-CHANNEL NAME MAPPING
---------------------------------
+Map values from the source file to the output schema.
 
-Use the file specified by CHANNEL_ACCOUNT_MAPPING_FILE.
+Output Field	Source Field
+Channel Order ID	channelOrderID
+Ship Date	Ship Date
+TimeZone	constant value
+Carrier	randomly assigned
+Tracking Number	Tracking Number
+Shipping Service	Shipping Service
+2nd Tracking Number	2nd Tracking Number
+Package	Package
+Shipping Fee	Shipping Fee
+Weight	Weight
+Length	Length
+Width	Width
+Height	Height
+Note	Note
+SKU	SKU
+Ship Qty	Order Qty
+Fixed Value Rules
+TimeZone
 
-This file maps:
+All rows must use the value:
 
-ChannelAccountNum → ChannelAccountName
+UTC-8
+Carrier Assignment Rules
+
+Carrier must be randomly assigned per order group.
+
+Allowed values:
+
+UPS
+FedEx
+Rules
+
+Randomly select UPS or FedEx.
+
+All rows with the same channelOrderID must use the same carrier.
+
+Ship Qty Rule
+Ship Qty = Order Qty
+Data Protection Rules
+
+Only the Tracking Number column may be modified.
+
+Never overwrite an existing tracking number.
+
+Preserve original row order in the master dataset.
+
+Preserve original column structure in the master file.
+
+Tracking Number Generation
+
+Generate tracking numbers only when the field is empty.
+
+UPS
+
+Format:
+
+1Z + 16 alphanumeric characters
 
 Example:
 
-10565 → Amazon  
-10570 → eBay  
-10580 → Shopify  
+1Z999AA10123456784
+FedEx
 
---------------------------------
-OUTPUT FILE RULES
---------------------------------
+Format:
 
-1. Generate one Excel file per ChannelAccountNum.
-2. Use ChannelAccountName as the output filename.
-3. If no mapping exists for a ChannelAccountNum,
-   use the ChannelAccountNum value itself as the filename.
+12 digits OR 15 digits
 
-Example outputs:
+Example:
 
-Amazon.xlsx  
-eBay.xlsx  
-Shopify.xlsx  
-10599.xlsx  
+449044304137
+USPS
 
---------------------------------
-COLUMN CLEANUP RULE
---------------------------------
+Format:
 
-For each generated channel file:
+20–22 numeric digits
+DHL
 
-Remove the column **ChannelAccountNum**.
+Format:
 
-All other columns must remain unchanged.
+10 numeric digits
+Default Rule
 
---------------------------------
-OUTPUT LOCATION
---------------------------------
+If Carrier is empty:
 
-Save all generated files to:
+Default → UPS
+Tracking Number Constraints
 
-OUTPUT_FOLDER
+Tracking numbers must be globally unique.
 
---------------------------------
-PROCESSING METHOD
---------------------------------
+Duplicate tracking numbers are allowed only within the same order group.
 
-1. Load the shipment spreadsheet.
-2. Group rows by **channelOrderID**.
-3. Generate or reuse tracking numbers based on order rules.
-4. Ensure tracking number uniqueness.
-5. Split records by **ChannelAccountNum**.
-6. Preserve order grouping when generating files.
-7. Export files to OUTPUT_FOLDER.
+Never generate a tracking number that already exists in the dataset.
 
---------------------------------
-FINAL OUTPUT
---------------------------------
+Order Consistency Rules
 
-Return:
+Rows sharing the same channelOrderID represent the same order.
 
-1. The completed master dataset with tracking numbers filled in.
-2. All channel-specific Excel files generated in OUTPUT_FOLDER.
+Rules
+
+All rows in the same order must stay together.
+
+All rows in the order must share the same tracking number.
+
+If one row already has a tracking number → reuse it for the order.
+
+If none exist → generate one tracking number for the order.
+
+Channel Split Rules
+
+After tracking numbers are finalized:
+
+Split rows by Channel.
+
+Ensure order groups remain intact.
+
+Channel File Naming
+
+File names must come from the Channel field.
+
+Examples:
+
+Amazon.xlsx
+eBay.xlsx
+Shopify.xlsx
+Walmart.xlsx
+
+Rules:
+
+Use the exact Channel value as the file name.
+
+If a channel name contains invalid filename characters, replace them with _.
+
+Example:
+
+Amazon US → Amazon_US.xlsx
+Required Deliverables
+1. Updated Master Dataset
+Shipment_From_SO_updated.xlsx
+
+Rules:
+
+Same schema as input
+
+Only Tracking Number may be updated
+
+2. Channel Output Files
+
+One Excel file per Channel.
+
+Each file must follow the exact header structure defined earlier.
+
+3. ZIP Package
+
+Package everything into:
+
+Shipment_Tracking_Output.zip
+
+Example contents:
+
+Shipment_From_SO_updated.xlsx
+Amazon.xlsx
+eBay.xlsx
+Shopify.xlsx
+Walmart.xlsx
+Final Response Summary
+
+Return a concise processing report:
+
+Total rows processed:
+Tracking numbers generated:
+Tracking numbers reused:
+Channel files produced:
+ZIP filename:
+Processing Order (Strict Execution)
+
+The AI must execute the steps in this exact sequence:
+
+Load the master dataset.
+
+Group rows by channelOrderID.
+
+Assign a carrier to each order group.
+
+Generate missing tracking numbers.
+
+Update the master dataset.
+
+Split rows by Channel.
+
+Build channel output files.
+
+Package all files into a ZIP.
