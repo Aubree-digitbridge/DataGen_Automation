@@ -18,6 +18,161 @@ ENTITY: SalesOrder
 DATASET TYPE: HISTORICAL (eCommerce realistic behavior)
 
 ================================================
+HARDCODED HEADER (MUST MATCH EXACTLY)
+
+The first CSV row must be this exact header, in this exact order:
+
+OrderNumber
+OrderType
+OrderStatus
+OrderDate
+ShipDate
+DueDate
+BillDate
+EtaArrivalDate
+EarliestShipDate
+LatestShipDate
+SignatureFlag
+CustomerCode
+CustomerName
+Terms
+TermsDays
+Currency
+SubTotalAmount
+SalesAmount
+TotalAmount
+TaxableAmount
+NonTaxableAmount
+TaxRate
+TaxAmount
+DiscountRate
+DiscountAmount
+ShippingAmount
+ShippingTaxAmount
+MiscAmount
+MiscTaxAmount
+ChargeAndAllowanceAmount
+ChannelAmount
+PaidAmount
+CreditAmount
+Balance
+DepositAmount
+SalesRep
+SalesRep2
+SalesRep3
+SalesRep4
+CommissionRate
+CommissionRate2
+CommissionRate3
+CommissionRate4
+TotalWeight
+ActualWeight
+CancelCode
+SalesDivision
+CustomerSource
+Fulfillment Status
+Financial Status
+AmountRefunded
+IsEdi
+ShippingCarrier
+ShippingClass
+MainTrackingNumber
+MainReturnTrackingNumber
+ChannelNum
+ChannelAccountNum
+ChannelOrderID
+SecondaryChannelOrderID
+ShippingAccount
+RefNum
+CustomerPoNum
+Carton
+EndBuyerUserID
+EndBuyerName
+EndBuyerEmail
+ShipToName
+ShipToFirstName
+ShipToLastName
+ShipToCompany
+ShipToAddressLine1
+ShipToAddressLine2
+ShipToAddressLine3
+ShipToCity
+ShipToState
+ShipToPostalCode
+ShipToCounty
+ShipToCountry
+ShipToEmail
+ShipToDaytimePhone
+BillToName
+BillToCompany
+BillToAddressLine1
+BillToAddressLine2
+BillToAddressLine3
+BillToCity
+BillToState
+BillToPostalCode
+BillToCounty
+BillToCountry
+BillToEmail
+BillToDaytimePhone
+Notes
+ShippingCode
+WarehouseCode
+ShipmentID
+DepartmentCode
+DivisionCode
+Seq
+ItemDate
+SKU
+UPC
+CustomerSKU
+SKUTitle
+LotNum
+Description
+UOM
+PackType
+PackQty
+PackPrice
+OrderPack
+ShipPack
+CancelledPack
+OpenPack
+OrderQty
+ShipQty
+CancelledQty
+OpenQty
+PriceRule
+Price
+DiscountPrice
+ExtAmount
+ItemTotalAmount
+ShipAmount
+CancelledAmount
+OpenAmount
+Stockable
+Taxable
+Costable
+IsProfit
+LotInDate
+LotExpDate
+DBChannelOrderLineRowID
+ItemShippingAmount
+ShippingCost
+ItemTaxAmount
+ItemShippingTaxAmount
+ItemDiscountRate
+ItemDiscountAmount
+ItemNotes
+ItemCancelCode
+Lineitem fulfillment status
+Lineitem taxable
+ChannelItemID
+EAN
+MPN
+ExternalBarcode
+PodInfo
+
+================================================
 USER PARAMETERS (OBEY STRICTLY)
 
 A) DATE RANGE
@@ -325,6 +480,36 @@ ShipQty = 0
 OpenQty = OrderQty
 
 ================================================
+MANDATORY FIELD RULES (REQUIRED)
+
+The following fields are mandatory and must be populated with these rules:
+
+OrderNumber = yyyyMMdd-sequenceNumber using OrderDate as yyyyMMdd prefix.
+Example for today: 20260312-1
+
+OrderType = 1
+
+OrderStatus = 0
+
+ShipDate = OrderDate + 3 days
+
+DueDate = ShipDate
+
+BillDate = ShipDate + 7 days
+
+ItemTotalAmount = ExtAmount
+
+OpenAmount = ExtAmount - CancelledAmount - (ShipQty * Price)
+
+Seq = line sequence number per order, starting at 1 and incrementing by 1 for each additional line in the same order
+
+ShipAmount = 0
+
+TaxRate = 0
+
+If any mandatory field listed above does not have additional explanation elsewhere, use these rules as the default source of truth.
+
+================================================
 PAYMENT AND FULFILLMENT STATUS
 
 Financial Status = ' '
@@ -379,6 +564,7 @@ Before output:
 5. TotalAmount is within limits.
 6. No SKU repeats within the same order.
 7. Every row matches the header column count.
+8. Mandatory fields (OrderNumber, OrderType, OrderStatus, ShipDate, DueDate, BillDate, ItemTotalAmount, OpenAmount, Seq, ShipAmount, TaxRate) are populated using the required rules.
 
 ================================================
 FINAL OUTPUT
