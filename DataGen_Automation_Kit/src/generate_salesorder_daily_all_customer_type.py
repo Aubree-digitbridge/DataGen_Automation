@@ -15,12 +15,17 @@ PROMPT_FILE = BASE / "prompts" / "salesOrder_daily_w_all_customerType_prompt.md"
 TEMPLATE_FILE = BASE / "templates" / "SalesOrder_Current.csv"
 CUSTOMER_FILE = BASE / "data" / "Customer_source.csv"
 MAPPING_FILE = BASE / "data" / "Customer-Channel-ChannelAccountMapping.csv"
+
+# Detailed product data with pricing/MSRP; used to enrich the SKU pool
 SKU_FILES = [
     BASE / "data" / "Shoe-Products.csv",
     BASE / "data" / "Product_Vibes_PJ.csv",
     BASE / "data" / "Product_Vibes_SP.csv",
     BASE / "data" / "Product_Vibes_SP2.csv",
 ]
+
+# Single authoritative SKU pool per prompt rules
+SINGLE_SKU_FILE = BASE / "data" / "SKU_Only.csv"
 
 
 def d2(value: Decimal) -> Decimal:
@@ -119,7 +124,12 @@ def load_prompt_config(path: Path) -> dict:
 
 
 def load_customers() -> list[dict]:
-    rows = read_csv_rows(CUSTOMER_FILE)
+    # Customer_source.csv is pipe-delimited ("|") rather than comma-delimited.
+    with CUSTOMER_FILE.open("r", encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f, delimiter="|")
+        rows = []
+        for row in reader:
+            rows.append({(k or "").strip(): (v or "").strip() for k, v in row.items()})
     mappings = read_csv_rows(MAPPING_FILE)
 
     map_by_code: dict[str, dict[str, str]] = {}
@@ -143,28 +153,32 @@ def load_customers() -> list[dict]:
     for i, r in enumerate(rows):
         code = r.get("Customer #", "")
         name = r.get("Customer Name", "")
-        ctype = (r.get("Type", "") or "Ecommerce").strip().capitalize()
-        if ctype.lower() == "ecommerce":
-            ctype = "Ecommerce"
-        elif ctype.lower() == "retail":
-            ctype = "Retail"
-        elif ctype.lower() == "wholesale":
-            ctype = "Wholesale"
 
         if not code or not name:
             continue
 
+        # Derive Ecommerce / Retail / Wholesale from the customer code prefix
+        # per prompt: three customer types.
+        if code.startswith("wh-"):
+            ctype = "Wholesale"
+        elif code.startswith("re-") or code in {"JCPenney", "Macys"}:
+            ctype = "Retail"
+        else:
+            ctype = "Ecommerce"
+
         mapping = map_by_code.get(code, {"ChannelNum": f"90{i:03d}", "ChannelAccountNum": f"19{i:03d}"})
 
-        contact = r.get("Contact", "")
-        parts = contact.split()
-        first = parts[0] if parts else contact
-        last = parts[-1] if len(parts) > 1 else ""
+        contact1 = r.get(" Contact", "") or r.get("Contact", "")
+        contact2 = r.get(" Contact2", "") or r.get("Contact2", "")
 
-        bill_city = r.get("Bill to City", "")
-        ship_city = r.get("Ship to City", "")
-        bill_state = r.get("Bill to State", "CA")
-        ship_state = r.get("Ship to State", "CA")
+        # Fallback phone/email use primary fields from the file
+        phone = r.get(" Phone1", "") or r.get("Phone1", "")
+        email = r.get(" Email", "") or r.get("Email", "")
+
+        bill_city = r.get(" BillCity", "") or r.get("BillCity", "")
+        ship_city = r.get(" ShipCity", "") or r.get("ShipCity", "")
+        bill_state = r.get(" BillState", "CA") or r.get("BillState", "CA")
+        ship_state = r.get(" ShipState", "CA") or r.get("ShipState", "CA")
 
         customers.append(
             {
@@ -173,21 +187,45 @@ def load_customers() -> list[dict]:
                 "Type": ctype,
                 "ChannelNum": mapping.get("ChannelNum", ""),
                 "ChannelAccountNum": mapping.get("ChannelAccountNum", ""),
-                "Contact": contact,
-                "ContactFirst": first,
-                "ContactLast": last,
-                "Phone": r.get("Phone #", ""),
-                "Email": r.get("Email", ""),
+                "Contact1": contact1,
+                "Contact2": contact2,
+                "Phone": phone,
+                "Email": email,
+                # Bill-to fields
+                "BillName": r.get(" BillName", "") or r.get("BillName", "") or name,
+                "BillCompany": r.get(" BillCompany", "") or r.get("BillCompany", "") or name,
+                "BillAddressLine1": r.get(" BillAddressLine1", "") or r.get("BillAddressLine1", ""),
+                "BillAddressLine2": r.get(" BillAddressLine2", "") or r.get("BillAddressLine2", ""),
                 "BillCity": bill_city,
                 "BillState": bill_state,
-                "BillZip": r.get("Bill to Zip Code", ""),
-                "BillCounty": city_county.get(bill_city, ""),
+                "BillZip": r.get(" BillPostalCode", "") or r.get("BillPostalCode", ""),
+                "BillCounty": r.get(" BillCounty", "") or r.get("BillCounty", "") or city_county.get(bill_city, ""),
+                "BillCountry": r.get(" BillCountry", "") or r.get("BillCountry", "") or "USA",
+                "BillEmail": r.get(" BillEmail", "") or r.get("BillEmail", "") or email,
+                "BillDaytimePhone": r.get(" BillDaytimePhone", "")
+                or r.get("BillDaytimePhone", "")
+                or phone,
+                "BillDescription": r.get(" BillDescription", "") or r.get("BillDescription", ""),
+                # Ship-to fields
+                "ShipName": r.get(" ShipName", "") or r.get("ShipName", "") or name,
+                "ShipCompany": r.get(" ShipCompany", "") or r.get("ShipCompany", "") or name,
+                "ShipAddressLine1": r.get(" ShipAddressLine1", "") or r.get("ShipAddressLine1", ""),
+                "ShipAddressLine2": r.get(" ShipAddressLine2", "") or r.get("ShipAddressLine2", ""),
                 "ShipCity": ship_city,
                 "ShipState": ship_state,
-                "ShipZip": r.get("Ship to Zip Code", ""),
-                "ShipCounty": city_county.get(ship_city, ""),
-                "SalesRep": r.get("Sales Rep", ""),
-                "SalesRep2": r.get("Sales Rep #2", ""),
+                "ShipZip": r.get(" ShipPostalCode", "") or r.get("ShipPostalCode", ""),
+                "ShipCounty": r.get(" ShipCounty", "")
+                or r.get("ShipCounty", "")
+                or city_county.get(ship_city, ""),
+                "ShipCountry": r.get(" ShipCountry", "") or r.get("ShipCountry", "") or "USA",
+                "ShipEmail": r.get(" ShipEmail", "") or r.get("ShipEmail", "") or email,
+                "ShipDaytimePhone": r.get(" ShipDaytimePhone", "")
+                or r.get("ShipDaytimePhone", "")
+                or phone,
+                "ShipDescription": r.get(" ShipDescription", "") or r.get("ShipDescription", ""),
+                # Sales reps from original file if present
+                "SalesRep": r.get(" SalesRep", "") or r.get("SalesRep", ""),
+                "SalesRep2": r.get(" SalesRep2", "") or r.get("SalesRep2", ""),
             }
         )
 
@@ -197,17 +235,46 @@ def load_customers() -> list[dict]:
 
 
 def load_skus() -> list[dict]:
-    result = []
+    # Per prompt, the authoritative SKU pool is SKU_Only.csv.
+    # We enrich those SKUs with pricing/MSRP from the detailed product files.
+    allowed_rows = read_csv_rows(SINGLE_SKU_FILE)
+    allowed_skus = {r.get("SKU", "").strip() for r in allowed_rows if r.get("SKU", "").strip()}
+
+    if not allowed_skus:
+        raise RuntimeError("No SKU rows found in data/SKU_Only.csv")
+
+    product_index: dict[str, dict[str, str]] = {}
     for p in SKU_FILES:
         for r in read_csv_rows(p):
-            sku = r.get("SKU", "")
-            if not sku:
+            sku = (r.get("SKU", "") or "").strip()
+            if not sku or sku not in allowed_skus:
                 continue
-            wsp = parse_decimal(r.get("Price", ""), Decimal("0"))
-            msrp = parse_decimal(r.get("MSRP", ""), Decimal("0"))
-            result.append({"SKU": sku, "SKUTitle": r.get("ProductTitle", ""), "WSP": wsp, "MSRP": msrp})
+            product_index[sku] = r
+
+    result: list[dict] = []
+    for sku in sorted(allowed_skus):
+        meta = product_index.get(sku, {})
+        wsp = parse_decimal(meta.get("Price", ""), Decimal("0"))
+        msrp = parse_decimal(meta.get("MSRP", ""), Decimal("0"))
+
+        # If we have no pricing metadata, fall back to a reasonable MSRP so that
+        # Retail/Wholesale rules can still be satisfied.
+        if msrp <= 0:
+            msrp = Decimal("60")
+        if wsp <= 0:
+            wsp = d2(msrp * Decimal("0.6"))
+
+        result.append(
+            {
+                "SKU": sku,
+                "SKUTitle": meta.get("ProductTitle", ""),
+                "WSP": wsp,
+                "MSRP": msrp,
+            }
+        )
+
     if not result:
-        raise RuntimeError("No SKU source rows found")
+        raise RuntimeError("No SKU source rows found that match SKU_Only.csv")
     return result
 
 
@@ -332,8 +399,8 @@ def main():
                 row["PaidAmount"] = f"{total:.2f}" if cfg["PAID_AMOUNT"].lower() == "totalamount" else cfg["PAID_AMOUNT"]
                 row["Balance"] = f"{total:.2f}" if cfg["BALANCE"].lower() == "totalamount" else cfg["BALANCE"]
 
-                row["SalesRep"] = customer["SalesRep"]
-                row["SalesRep2"] = customer["SalesRep2"]
+                row["SalesRep"] = customer.get("SalesRep", "")
+                row["SalesRep2"] = customer.get("SalesRep2", "")
                 row["Fulfillment Status"] = cfg["FULFILLMENT_STATUS"]
                 row["Financial Status"] = cfg["FINANCIAL_STATUS"]
 
@@ -341,33 +408,35 @@ def main():
                 row["ChannelAccountNum"] = customer["ChannelAccountNum"]
                 row["ChannelOrderID"] = channel_order_id
 
-                row["ShipToName"] = customer["CustomerName"]
-                row["ShipToFirstName"] = customer["ContactFirst"]
-                row["ShipToLastName"] = customer["ContactLast"]
-                row["ShipToCompany"] = customer["CustomerName"]
-                row["ShipToAddressLine1"] = f"{customer['ShipCity']} Warehouse"
-                row["ShipToAddressLine2"] = "Dock 1"
-                row["ShipToAddressLine3"] = "Primary Ship Address"
+                # Ship-to mapping per prompt rules (using customer source fields)
+                row["ShipToName"] = customer["ShipName"]
+                row["ShipToFirstName"] = customer["Contact1"]
+                row["ShipToLastName"] = customer["Contact2"]
+                row["ShipToCompany"] = customer["ShipCompany"]
+                row["ShipToAddressLine1"] = customer["ShipAddressLine1"]
+                row["ShipToAddressLine2"] = customer["ShipAddressLine2"]
+                row["ShipToAddressLine3"] = customer["ShipDescription"]
                 row["ShipToCity"] = customer["ShipCity"]
                 row["ShipToState"] = customer["ShipState"]
                 row["ShipToPostalCode"] = customer["ShipZip"]
                 row["ShipToCounty"] = customer["ShipCounty"]
-                row["ShipToCountry"] = "USA"
-                row["ShipToEmail"] = customer["Email"]
-                row["ShipToDaytimePhone"] = customer["Phone"]
+                row["ShipToCountry"] = customer["ShipCountry"]
+                row["ShipToEmail"] = customer["ShipEmail"]
+                row["ShipToDaytimePhone"] = customer["ShipDaytimePhone"]
 
-                row["BillToName"] = customer["CustomerName"]
-                row["BillToCompany"] = customer["CustomerName"]
-                row["BillToAddressLine1"] = f"{customer['BillCity']} Billing Office"
-                row["BillToAddressLine2"] = "Suite 100"
-                row["BillToAddressLine3"] = "Primary Bill Address"
+                # Bill-to fields are required; copy from customer billing profile
+                row["BillToName"] = customer["BillName"]
+                row["BillToCompany"] = customer["BillCompany"]
+                row["BillToAddressLine1"] = customer["BillAddressLine1"]
+                row["BillToAddressLine2"] = customer["BillAddressLine2"]
+                row["BillToAddressLine3"] = customer["BillDescription"]
                 row["BillToCity"] = customer["BillCity"]
                 row["BillToState"] = customer["BillState"]
                 row["BillToPostalCode"] = customer["BillZip"]
                 row["BillToCounty"] = customer["BillCounty"]
-                row["BillToCountry"] = "USA"
-                row["BillToEmail"] = customer["Email"]
-                row["BillToDaytimePhone"] = customer["Phone"]
+                row["BillToCountry"] = customer["BillCountry"]
+                row["BillToEmail"] = customer["BillEmail"]
+                row["BillToDaytimePhone"] = customer["BillDaytimePhone"]
 
                 row["Seq"] = str(idx + 1)
                 row["ItemDate"] = dt.isoformat()

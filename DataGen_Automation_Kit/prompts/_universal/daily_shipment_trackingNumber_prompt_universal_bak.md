@@ -216,11 +216,15 @@ One Excel file per Channel.
 
 Each file must follow the exact header structure defined earlier.
 
-3.output all the files by indivisually
+3. ZIP Package
 
+Package everything into:
+
+Shipment_Tracking_Output.zip
 
 Example contents:
 
+Shipment_From_SO_updated.xlsx
 Amazon.xlsx
 eBay.xlsx
 Shopify.xlsx
@@ -252,3 +256,4 @@ Split rows by Channel.
 
 Build channel output files.
 
+Package all files into a ZIP.
