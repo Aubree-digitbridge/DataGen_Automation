@@ -252,6 +252,26 @@ Generation rules:
 5. OrderNumber must be unique per order.
 
 ================================================
+H) CHANNEL ORDER ID CONTROL
+
+ChannelOrderID format must be:
+ChannelAccountNum-yymmdd-sequenceNumber
+
+Where:
+- ChannelAccountNum comes from mapped ChannelAccountNum for the selected customer
+- yymmdd uses today's date (same date basis as OrderDate)
+- sequenceNumber is zero-padded to 6 digits
+
+Example:
+10016-260312-000020
+
+Generation rules:
+
+1. ChannelOrderID must be unique per order.
+2. sequenceNumber in ChannelOrderID must stay sequential with no gaps for each date.
+3. ChannelOrderID sequence should align with order generation sequence.
+
+================================================
 POST GENERATION PARAMETER UPDATE
 
 After the dataset has been generated:
@@ -404,6 +424,7 @@ Ensure:
 
 OrderNumber increments sequentially.
 ChannelOrderID is unique per order.
+ChannelOrderID follows ChannelAccountNum-yymmdd-sequenceNumber with 6-digit zero-padded sequence.
 No day exceeds 20 orders.
 
 STEP 2 — Assign Line Items
@@ -507,7 +528,24 @@ ShipAmount = 0
 
 TaxRate = 0
 
+ChannelOrderID = ChannelAccountNum-yymmdd-sequenceNumber (sequenceNumber is zero-padded to 6 digits)
+
 If any mandatory field listed above does not have additional explanation elsewhere, use these rules as the default source of truth.
+
+================================================
+COMMISSION FIELDS RULE
+
+Set the following fields to blank:
+
+CommissionRate = ' '
+
+CommissionRate1 = ' '
+
+CommissionRate2 = ' '
+
+CommissionRate3 = ' '
+
+CommissionRate4 = ' '
 
 ================================================
 PAYMENT AND FULFILLMENT STATUS
@@ -565,6 +603,8 @@ Before output:
 6. No SKU repeats within the same order.
 7. Every row matches the header column count.
 8. Mandatory fields (OrderNumber, OrderType, OrderStatus, ShipDate, DueDate, BillDate, ItemTotalAmount, OpenAmount, Seq, ShipAmount, TaxRate) are populated using the required rules.
+9. Commission fields (CommissionRate, CommissionRate1, CommissionRate2, CommissionRate3, CommissionRate4) are blank.
+10. ChannelOrderID follows ChannelAccountNum-yymmdd-sequenceNumber format (example: 10016-260312-000020) and is unique.
 
 ================================================
 FINAL OUTPUT
