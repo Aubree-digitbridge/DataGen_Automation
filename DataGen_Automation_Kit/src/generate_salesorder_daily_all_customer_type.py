@@ -124,13 +124,23 @@ def load_prompt_config(path: Path) -> dict:
 
 
 def load_customers() -> list[dict]:
-    # Customer_source.csv is pipe-delimited ("|") rather than comma-delimited.
+    # Support both legacy pipe-delimited and current comma-delimited customer source files.
     with CUSTOMER_FILE.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f, delimiter="|")
+        first_line = f.readline()
+        f.seek(0)
+        delimiter = "|" if "|" in first_line and "," not in first_line else ","
+        reader = csv.DictReader(f, delimiter=delimiter)
         rows = []
         for row in reader:
             rows.append({(k or "").strip(): (v or "").strip() for k, v in row.items()})
     mappings = read_csv_rows(MAPPING_FILE)
+
+    def pick(row: dict[str, str], *keys: str) -> str:
+        for key in keys:
+            val = row.get(key, "")
+            if val:
+                return val
+        return ""
 
     map_by_code: dict[str, dict[str, str]] = {}
     for m in mappings:
@@ -151,34 +161,35 @@ def load_customers() -> list[dict]:
 
     customers = []
     for i, r in enumerate(rows):
-        code = r.get("Customer #", "")
-        name = r.get("Customer Name", "")
+        code = pick(r, "Customer #", "CustomerCode", "Customer Code")
+        name = pick(r, "Customer Name", "CustomerName")
 
         if not code or not name:
             continue
 
-        # Derive Ecommerce / Retail / Wholesale from the customer code prefix
-        # per prompt: three customer types.
-        if code.startswith("wh-"):
-            ctype = "Wholesale"
-        elif code.startswith("re-") or code in {"JCPenney", "Macys"}:
-            ctype = "Retail"
-        else:
-            ctype = "Ecommerce"
+        # Prefer explicit Type from source, fallback to code prefixes.
+        ctype = pick(r, "Type")
+        if ctype not in {"Ecommerce", "Retail", "Wholesale"}:
+            if code.startswith("wh-"):
+                ctype = "Wholesale"
+            elif code.startswith("re-") or code in {"JCPenney", "Macys"}:
+                ctype = "Retail"
+            else:
+                ctype = "Ecommerce"
 
         mapping = map_by_code.get(code, {"ChannelNum": f"90{i:03d}", "ChannelAccountNum": f"19{i:03d}"})
 
-        contact1 = r.get(" Contact", "") or r.get("Contact", "")
-        contact2 = r.get(" Contact2", "") or r.get("Contact2", "")
+        contact1 = pick(r, "Contact", "Contact1", " Contact")
+        contact2 = pick(r, "Contact2", " Contact2")
 
         # Fallback phone/email use primary fields from the file
-        phone = r.get(" Phone1", "") or r.get("Phone1", "")
-        email = r.get(" Email", "") or r.get("Email", "")
+        phone = pick(r, "Phone #", "Phone1", " Phone1")
+        email = pick(r, "Email", " Email")
 
-        bill_city = r.get(" BillCity", "") or r.get("BillCity", "")
-        ship_city = r.get(" ShipCity", "") or r.get("ShipCity", "")
-        bill_state = r.get(" BillState", "CA") or r.get("BillState", "CA")
-        ship_state = r.get(" ShipState", "CA") or r.get("ShipState", "CA")
+        bill_city = pick(r, "Bill to City", "BillCity", " BillCity")
+        ship_city = pick(r, "Ship to City", "ShipCity", " ShipCity")
+        bill_state = pick(r, "Bill to State", "BillState", " BillState") or "CA"
+        ship_state = pick(r, "Ship to State", "ShipState", " ShipState") or "CA"
 
         customers.append(
             {
@@ -192,40 +203,34 @@ def load_customers() -> list[dict]:
                 "Phone": phone,
                 "Email": email,
                 # Bill-to fields
-                "BillName": r.get(" BillName", "") or r.get("BillName", "") or name,
-                "BillCompany": r.get(" BillCompany", "") or r.get("BillCompany", "") or name,
-                "BillAddressLine1": r.get(" BillAddressLine1", "") or r.get("BillAddressLine1", ""),
-                "BillAddressLine2": r.get(" BillAddressLine2", "") or r.get("BillAddressLine2", ""),
+                "BillName": pick(r, "BillName", " BillName") or name,
+                "BillCompany": pick(r, "BillCompany", " BillCompany") or name,
+                "BillAddressLine1": pick(r, "BillAddressLine1", " BillAddressLine1"),
+                "BillAddressLine2": pick(r, "BillAddressLine2", " BillAddressLine2"),
                 "BillCity": bill_city,
                 "BillState": bill_state,
-                "BillZip": r.get(" BillPostalCode", "") or r.get("BillPostalCode", ""),
-                "BillCounty": r.get(" BillCounty", "") or r.get("BillCounty", "") or city_county.get(bill_city, ""),
-                "BillCountry": r.get(" BillCountry", "") or r.get("BillCountry", "") or "USA",
-                "BillEmail": r.get(" BillEmail", "") or r.get("BillEmail", "") or email,
-                "BillDaytimePhone": r.get(" BillDaytimePhone", "")
-                or r.get("BillDaytimePhone", "")
-                or phone,
-                "BillDescription": r.get(" BillDescription", "") or r.get("BillDescription", ""),
+                "BillZip": pick(r, "Bill to Zip Code", "BillPostalCode", " BillPostalCode"),
+                "BillCounty": pick(r, "BillCounty", " BillCounty") or city_county.get(bill_city, ""),
+                "BillCountry": pick(r, "BillCountry", " BillCountry") or "USA",
+                "BillEmail": pick(r, "BillEmail", " BillEmail") or email,
+                "BillDaytimePhone": pick(r, "BillDaytimePhone", " BillDaytimePhone") or phone,
+                "BillDescription": pick(r, "BillDescription", " BillDescription"),
                 # Ship-to fields
-                "ShipName": r.get(" ShipName", "") or r.get("ShipName", "") or name,
-                "ShipCompany": r.get(" ShipCompany", "") or r.get("ShipCompany", "") or name,
-                "ShipAddressLine1": r.get(" ShipAddressLine1", "") or r.get("ShipAddressLine1", ""),
-                "ShipAddressLine2": r.get(" ShipAddressLine2", "") or r.get("ShipAddressLine2", ""),
+                "ShipName": pick(r, "ShipName", " ShipName") or name,
+                "ShipCompany": pick(r, "ShipCompany", " ShipCompany") or name,
+                "ShipAddressLine1": pick(r, "ShipAddressLine1", " ShipAddressLine1"),
+                "ShipAddressLine2": pick(r, "ShipAddressLine2", " ShipAddressLine2"),
                 "ShipCity": ship_city,
                 "ShipState": ship_state,
-                "ShipZip": r.get(" ShipPostalCode", "") or r.get("ShipPostalCode", ""),
-                "ShipCounty": r.get(" ShipCounty", "")
-                or r.get("ShipCounty", "")
-                or city_county.get(ship_city, ""),
-                "ShipCountry": r.get(" ShipCountry", "") or r.get("ShipCountry", "") or "USA",
-                "ShipEmail": r.get(" ShipEmail", "") or r.get("ShipEmail", "") or email,
-                "ShipDaytimePhone": r.get(" ShipDaytimePhone", "")
-                or r.get("ShipDaytimePhone", "")
-                or phone,
-                "ShipDescription": r.get(" ShipDescription", "") or r.get("ShipDescription", ""),
+                "ShipZip": pick(r, "Ship to Zip Code", "ShipPostalCode", " ShipPostalCode"),
+                "ShipCounty": pick(r, "ShipCounty", " ShipCounty") or city_county.get(ship_city, ""),
+                "ShipCountry": pick(r, "ShipCountry", " ShipCountry") or "USA",
+                "ShipEmail": pick(r, "ShipEmail", " ShipEmail") or email,
+                "ShipDaytimePhone": pick(r, "ShipDaytimePhone", " ShipDaytimePhone") or phone,
+                "ShipDescription": pick(r, "ShipDescription", " ShipDescription"),
                 # Sales reps from original file if present
-                "SalesRep": r.get(" SalesRep", "") or r.get("SalesRep", ""),
-                "SalesRep2": r.get(" SalesRep2", "") or r.get("SalesRep2", ""),
+                "SalesRep": pick(r, "Sales Rep", "SalesRep", " SalesRep"),
+                "SalesRep2": pick(r, "Sales Rep #2", "SalesRep2", " SalesRep2"),
             }
         )
 
@@ -363,7 +368,9 @@ def main():
             per_type_count[ctype] += 1
 
             order_number = f"{dt.strftime('%Y%m%d')}-{seq}"
-            channel_order_id = f"{customer['ChannelNum']}-{dt.strftime('%y%m%d')}-{seq:06d}"
+            _code_lower = customer["CustomerCode"].lower()
+            _suppress_channel_order = any(_code_lower.startswith(p) for p in ("wh-", "re-", "cu-"))
+            channel_order_id = "" if _suppress_channel_order else f"{customer['ChannelNum']}-{dt.strftime('%y%m%d')}-{seq:06d}"
 
             shipping = d2(Decimal(rng.randint(0, 1800)) / Decimal(100)) if rng.random() < 0.9 else Decimal("0")
             skus, qtys, prices, exts, sub_total, total = make_lines_for_type(rng, cfg, ctype, sku_pool, shipping)

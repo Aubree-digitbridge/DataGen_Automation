@@ -122,6 +122,10 @@ SOURCE FILE RULES
 Customers source:
 data/Customer_source.csv
 
+Schema update note for customer source:
+- The old field `Customer #` has been replaced by `CustomerCode`.
+- Use `CustomerCode` as the customer key in all rules and mappings.
+
 Customer-channel mapping source:
 data\Customer-Channel-ChannelAccountMapping.csv
 
@@ -155,6 +159,10 @@ ShipToCountry
 ShipToEmail
 ShipToDaytimePhone
 
+Hard requirement:
+- All ShipTo fields listed above are required for every order row.
+- Empty string, null, or whitespace-only values are not allowed.
+
 Populate ShipTo fields from data/Customer_source.csv:
 
 ShipName → ShipToName
@@ -171,6 +179,22 @@ ShipCounty → ShipToCounty
 ShipCountry → ShipToCountry
 ShipEmail → ShipToEmail
 ShipDaytimePhone → ShipToDaytimePhone
+
+Fallback rules when source shipping columns are missing or empty:
+- ShipToName = CustomerName
+- ShipToFirstName = Contact
+- ShipToLastName = Contact2
+- ShipToCompany = CustomerName
+- ShipToAddressLine1 = BillToAddressLine1
+- ShipToAddressLine2 = BillToAddressLine2
+- ShipToAddressLine3 = BillToAddressLine3
+- ShipToCity = BillToCity
+- ShipToState = BillToState
+- ShipToPostalCode = BillToPostalCode
+- ShipToCounty = BillToCounty
+- ShipToCountry = BillToCountry
+- ShipToEmail = BillToEmail
+- ShipToDaytimePhone = BillToDaytimePhone
 
 ================================================
 BILL TO RULE
@@ -245,10 +269,21 @@ ChannelNum
 ChannelAccountNum
 OrderDate
 
+ChannelOrderID suppression rule:
+
+If CustomerCode starts with any of the following prefixes:
+  - wh-
+  - re-
+  - cu-
+
+Then set ChannelOrderID = blank (empty string).
+
+Otherwise, generate ChannelOrderID as normal.
+
 Ensure:
 
 OrderNumber increments sequentially.
-ChannelOrderID is unique per order.
+ChannelOrderID is unique per order only when it is not blank.
 No day exceeds 20 orders.
 
 STEP 2 — Assign Line Items

@@ -294,17 +294,26 @@ For 20260603, SequenceNumberStart = 451
 ================================================
 SOURCE FILE RULES
 
-Customers source:
-data/Customer_source.csv
+ATTACHED FILES NOTICE:
+The following files are always attached by the user at runtime.
+Read all customer, channel, and SKU data directly from the attached files.
+Do NOT fabricate or assume data that is not present in the attached files.
 
-Customer-channel mapping source:
-data\Customer-Channel-ChannelAccountMapping.csv
+Attached files:
+- Customer_source.csv       (customer master data)
+- Customer-Channel-ChannelAccountMapping.csv  (channel mapping)
+- SKU_Only.csv              (authoritative SKU pool)
 
-Use ONLY CustomerCode and CustomerName from data/Customer_source.csv.
+Schema note for Customer_source.csv:
+- The key field is CustomerCode (the old field name was Customer #).
+- Use CustomerCode as the customer identifier in all rules and mappings.
+- The Type column contains one of: Ecommerce, Retail, Wholesale.
+
+Use ONLY CustomerCode and CustomerName from Customer_source.csv.
 
 CustomerCode and CustomerName must match exactly from the same row.
 
-Populate ChannelNum and ChannelAccountNum using mapping:
+Populate ChannelNum and ChannelAccountNum using Customer-Channel-ChannelAccountMapping.csv:
 
 CustomerCode → ChannelNum, ChannelAccountNum
 
@@ -347,6 +356,26 @@ ShipCountry → ShipToCountry
 ShipEmail → ShipToEmail
 ShipDaytimePhone → ShipToDaytimePhone
 
+Hard requirement:
+- All ShipTo fields listed above are required for every order row.
+- Empty string, null, or whitespace-only values are not allowed.
+
+Fallback rules when source shipping columns are missing or empty:
+- ShipToName = CustomerName
+- ShipToFirstName = Contact
+- ShipToLastName = Contact2
+- ShipToCompany = CustomerName
+- ShipToAddressLine1 = BillToAddressLine1
+- ShipToAddressLine2 = BillToAddressLine2
+- ShipToAddressLine3 = BillToAddressLine3
+- ShipToCity = BillToCity
+- ShipToState = BillToState
+- ShipToPostalCode = BillToPostalCode
+- ShipToCounty = BillToCounty
+- ShipToCountry = BillToCountry
+- ShipToEmail = BillToEmail
+- ShipToDaytimePhone = BillToDaytimePhone
+
 ================================================
 BILL TO RULE
 
@@ -381,11 +410,11 @@ PRODUCT SOURCES
 
 Use one single source file for SKU pool:
 
-SKU_Only.csv
+SKU_Only.csv (attached)
 
 Rules:
 
-SKU must come from SKU_Only.csv.
+SKU must come from the attached SKU_Only.csv.
 
 Do NOT repeat the same SKU within the same order.
 
@@ -420,11 +449,21 @@ ChannelNum
 ChannelAccountNum
 OrderDate
 
+ChannelOrderID suppression rule:
+
+If CustomerCode starts with any of the following prefixes:
+  - wh-
+  - re-
+  - cu-
+
+Then set ChannelOrderID = blank (empty string).
+
+Otherwise, generate ChannelOrderID as normal (ChannelAccountNum-yymmdd-sequenceNumber, zero-padded to 6 digits).
+
 Ensure:
 
 OrderNumber increments sequentially.
-ChannelOrderID is unique per order.
-ChannelOrderID follows ChannelAccountNum-yymmdd-sequenceNumber with 6-digit zero-padded sequence.
+ChannelOrderID is unique per order only when it is not blank.
 No day exceeds 20 orders.
 
 STEP 2 — Assign Line Items
@@ -500,6 +539,16 @@ ShipQty = 0
 
 OpenQty = OrderQty
 
+CancelledQty = 0
+
+CancelledAmount = 0.00
+
+DiscountRate = 0
+
+DiscountAmount = 0.00
+
+ItemDate = OrderDate
+
 ================================================
 MANDATORY FIELD RULES (REQUIRED)
 
@@ -562,7 +611,7 @@ Balance = TotalAmount
 CUSTOMER TYPE BASED ORDER RULES (APPENDED)
 
 Customer source for Type must be:
-data/Customer_source.csv
+the attached Customer_source.csv file
 
 This file contains three Type values:
 
@@ -604,7 +653,7 @@ Before output:
 7. Every row matches the header column count.
 8. Mandatory fields (OrderNumber, OrderType, OrderStatus, ShipDate, DueDate, BillDate, ItemTotalAmount, OpenAmount, Seq, ShipAmount, TaxRate) are populated using the required rules.
 9. Commission fields (CommissionRate, CommissionRate1, CommissionRate2, CommissionRate3, CommissionRate4) are blank.
-10. ChannelOrderID follows ChannelAccountNum-yymmdd-sequenceNumber format (example: 10016-260312-000020) and is unique.
+10. ChannelOrderID is blank for CustomerCodes starting with wh-, re-, or cu-; otherwise populated as ChannelAccountNum-yymmdd-sequenceNumber (example: 10016-260312-000020) and unique.
 
 ================================================
 FINAL OUTPUT
